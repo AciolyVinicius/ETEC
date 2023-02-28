@@ -1,0 +1,88 @@
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ApplicationInsights.config
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll.config
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.pdb
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Agent.Intercept.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.PerfCounterCollector.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.xml
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.xml
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.xml
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.xml
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.csprojResolveAssemblyReference.cache
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.pdb
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ApplicationInsights.config
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll.config
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.pdb
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Agent.Intercept.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.PerfCounterCollector.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.xml
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.xml
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.xml
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.xml
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.csprojResolveAssemblyReference.cache
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.dll
+I:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.pdb
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\ApplicationInsights.config
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll.config
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.pdb
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\MySql.Data.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\MySql.Data.Entity.EF5.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\MySql.Data.Entity.EF6.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\MySql.Web.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.xml
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.xml
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.xml
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.xml
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.csprojResolveAssemblyReference.cache
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.dll
+F:\Projeto C# cagado\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.pdb
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ApplicationInsights.config
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll.config
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\ProjetoWebService.pdb
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Agent.Intercept.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.PerfCounterCollector.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Data.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Data.Entity.EF5.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Data.Entity.EF6.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Web.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.DependencyCollector.xml
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.Web.xml
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.AI.WindowsServer.xml
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\Microsoft.ApplicationInsights.xml
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.csprojResolveAssemblyReference.cache
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.dll
+H:\Projeto C#\ProjetoWebService\ProjetoWebService\obj\Debug\ProjetoWebService.pdb
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Data.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Data.Entity.EF5.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Data.Entity.EF6.dll
+J:\Projeto C#\ProjetoWebService\ProjetoWebService\bin\MySql.Web.dll

@@ -1,0 +1,17 @@
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\bin\Debug\testeMySQL.exe.config
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\bin\Debug\testeMySQL.exe
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\bin\Debug\testeMySQL.pdb
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\bin\Debug\MySql.Data.dll
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\bin\Debug\MySql.Data.xml
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.csprojResolveAssemblyReference.cache
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.Frm_principal.resources
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.Properties.Resources.resources
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.csproj.GenerateResource.Cache
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.exe
+C:\Users\patri\Desktop\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.pdb
+C:\Técnico - Fritação\C# e MySQL\ConexaoMySQL\testeMySQL\bin\Debug\testeMySQL.exe.config
+C:\Técnico - Fritação\C# e MySQL\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.exe
+C:\Técnico - Fritação\C# e MySQL\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.pdb
+E:\V\C# e MySQL\ConexaoMySQL\testeMySQL\bin\Debug\testeMySQL.exe.config
+E:\V\C# e MySQL\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.exe
+E:\V\C# e MySQL\ConexaoMySQL\testeMySQL\obj\Debug\testeMySQL.pdb

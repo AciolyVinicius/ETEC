@@ -1,0 +1,7 @@
+1º executar o SQL Script ali, que é responsável por criar e utilizar o banco de dados.
+
+2º No projeto, tem 4 classes de conexão com o banco - uma pra cada ação (Alterar.cs, Inserir.cs, Selecionar.cs e Remover.cs). Vai ter que entrar em todas: dentro de cada, tem uma String que representa o caminho para a conexão com o banco. Em UID=root, em vez de 'root', ponha o seu usuário de servidor e em PASSWORD=patrickao, em vez de 'patrickao', ponha a senha. 
+
+3º instalar o conector do MySQL para o .NET caso for mudar algo no projeto - ele contem as referêcias do MySQL para o C#. Para incluir essa referência:
+
+Depois de abrir o projeto no Visual Studio, clicar com o botão direito do mouse sobre o projeto (que fica na guia Solution Explorer do lado direito da tela) e selecionar 'Add', depois 'Reference... '. Daí vai abrir uma outra janela, que contém do lado esquerdo  a opção 'Extensions'. Clicar sobre, e procurar pelo nome MySql.Data. Selecionar a checkBox que fica do lado do nome e dar OK. 

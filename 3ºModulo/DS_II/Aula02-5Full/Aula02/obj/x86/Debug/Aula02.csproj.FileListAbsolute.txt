@@ -1,0 +1,105 @@
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\bin\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\bin\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\bin\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\bin\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-Insert\Aula02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\bin\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\bin\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-2Insert\Aula02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\Aula02.Frm_Delete.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\bin\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-3Insert\Aula02\bin\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.Frm_Delete.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.Frm_Update.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\bin\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-4Update\Aula02\bin\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Dinamica\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Dinamica\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\bin\Debug\Aula02.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\bin\Debug\Aula02.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Delete.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Full.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Update.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#1\Aula02-5Full\Aula02\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.exe
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.pdb
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.exe
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.pdb
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.csprojResolveAssemblyReference.cache
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Delete.resources
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Full.resources
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Update.resources
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.csproj.GenerateResource.Cache
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\bin\Debug\Aula02.exe
+H:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\bin\Debug\Aula02.pdb
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.exe
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.pdb
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.csprojResolveAssemblyReference.cache
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Delete.resources
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Full.resources
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Update.resources
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.csproj.GenerateResource.Cache
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\bin\Debug\Aula02.exe
+F:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\bin\Debug\Aula02.pdb
+E:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.exe
+E:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.pdb
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\bin\Debug\Aula02.exe
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\bin\Debug\Aula02.pdb
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.csprojResolveAssemblyReference.cache
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Delete.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Full.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Insert.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Login.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Frm_Update.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.Properties.Resources.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02-5Full\Aula02\obj\x86\Debug\Aula02.csproj.GenerateResource.Cache

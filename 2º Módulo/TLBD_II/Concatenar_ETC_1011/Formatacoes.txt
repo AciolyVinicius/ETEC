@@ -1,0 +1,16 @@
+%M Nome completo do mês
+%m Mês numérico
+%b Nome do mês abreviado
+%W Nome completo do dia da semana
+%D Dia do mês
+%Y Ano com quatro dígitos
+%y Ano com dois dígitos
+%j Dia do ano - numérico
+%a Nome abreviado do dia da semana
+%d Dia do mês - dígito
+%r Hora no formato 12 horas
+%T Hora no formato 24 horas
+%H Hora 00 - 23
+%h Hora 01 - 12
+%"i" Minutos 00- 59
+%S Segundos

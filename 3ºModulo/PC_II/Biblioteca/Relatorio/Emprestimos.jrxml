@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Emprestimos" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea1275f1-c667-4d80-ba12-95f0822790a5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_emprestimo.`cd_emprestimo` AS 'Código',
+     tb_emprestimo.`dt_saida` AS 'Data de Saída',
+     tb_emprestimo.`dt_devolucao` AS 'Data de Devolução',
+     tb_emprestimo.`ic_devolvido` AS 'Devolvido',
+     tb_acervo.`nm_titulo` AS 'Título do Acervo',
+     tb_usuario.`nm_usuario` AS 'Usuário'
+FROM
+     `tb_acervo` tb_acervo INNER JOIN `tb_emprestimo` tb_emprestimo ON tb_acervo.`cd_acervo` = tb_emprestimo.`cd_acervo`
+     INNER JOIN `tb_usuario` tb_usuario ON tb_emprestimo.`cd_usuario` = tb_usuario.`cd_usuario`]]>
+	</queryString>
+	<field name="Código" class="java.lang.Integer"/>
+	<field name="Data de Saída" class="java.sql.Date"/>
+	<field name="Data de Devolução" class="java.sql.Date"/>
+	<field name="Devolvido" class="java.lang.Boolean"/>
+	<field name="Título do Acervo" class="java.lang.String"/>
+	<field name="Usuário" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="5d4298b4-8a35-4b72-a22b-a1c7c062106e"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="0afda061-2889-4ce0-9fb4-043ebf83abe3"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[EMPRÉSTIMOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="100" y="46" width="174" height="22" uuid="14f773d4-a132-477f-805d-6a329b74c1ad"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="591ef844-0b7e-4a03-9923-ac762414215f"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="67" height="15" uuid="7f8546d0-1ac3-443d-a3fb-2a9761c50d68"/>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="67" y="19" width="87" height="15" uuid="a57618c1-bdc0-4c43-9e1c-7850eedd4c8f"/>
+				<text><![CDATA[Saída]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="154" y="19" width="85" height="15" uuid="210c4440-50fc-40b5-a1c0-ef01efaeffaf"/>
+				<text><![CDATA[Devolução]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="239" y="19" width="60" height="15" uuid="29ea6728-a74c-4a40-b161-c9e16bb2bae0"/>
+				<text><![CDATA[Devolvido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="299" y="19" width="117" height="15" uuid="4a5e580e-673a-4b6c-815f-6797181297fa"/>
+				<text><![CDATA[Título do Acervo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="416" y="19" width="139" height="15" uuid="9c8cbf5c-46f3-4918-a256-94c1b1cfe82a"/>
+				<text><![CDATA[Usuário]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="0622bece-fce0-4f01-9d5e-8e1c52391187"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="67" height="15" uuid="966685b5-7450-43cc-81b2-e348c8decedd"/>
+				<textFieldExpression><![CDATA[$F{Código}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="67" y="0" width="87" height="15" uuid="9581a484-ef97-4e18-ad43-3f9035d2e5a2"/>
+				<textFieldExpression><![CDATA[$F{Data de Saída}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="154" y="0" width="85" height="15" uuid="206b67ba-5db2-4861-9127-82aeab98f125"/>
+				<textFieldExpression><![CDATA[$F{Data de Saída}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="239" y="0" width="60" height="15" uuid="6670bafb-7763-46b8-a0e4-bdd25a09b736"/>
+				<textFieldExpression><![CDATA[$F{Devolvido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="299" y="0" width="117" height="15" uuid="af050cd2-74aa-4c97-81b9-0c8dd48bb34b"/>
+				<textFieldExpression><![CDATA[$F{Título do Acervo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="416" y="0" width="139" height="15" uuid="1d165545-9842-4bc4-8bc3-c843142aad6e"/>
+				<textFieldExpression><![CDATA[$F{Usuário}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="d7d5b86f-2a60-4a6c-91f1-dea09e5f3fa3"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="29711dab-52a4-460e-b87b-9f02058ed37e"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="652977cc-8700-4571-9bd0-efb5b393136b"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="33317038-c118-4523-8759-028899f0ee61"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,43 @@
+
+show tables;
+
+select * from tb_aluno;
+select nm_aluno, dt_nascimento 
+	from tb_aluno
+		where dt_nascimento > '1980-01-01'
+		and dt_nascimento < '1983-01-01'
+		and cd_cidade = 1;
+
+select nm_uf, sg_uf
+	from tb_estado
+		where sg_uf = 'SP';
+
+select count(*)
+	from tb_matricula
+		where dt_matricula >= '2012-02-01'
+		and dt_matricula <= '2012-02-10';
+
+
+select *
+	from tb_matricula
+		where dt_matricula >= '2012-02-01'
+		and dt_matricula <= '2012-02-10';
+
+
+select nm_aluno as 'Nome do Aluno', dt_nascimento as 'Data de Nascimento',
+		datediff('2017-09-01',dt_nascimento) as 'Dias' 
+			from tb_aluno;
+
+select nm_aluno as 'Nome do Aluno', dt_nascimento as 'Data de Nascimento',
+		datediff('2017-09-01',dt_nascimento) as 'Dias' 
+			from tb_aluno;
+
+select nm_aluno as 'Nome do Aluno', dt_nascimento as 'Data de Nascimento',
+		datediff('2017-09-01',dt_nascimento) as Dias,
+		datediff('2017-09-01',dt_nascimento) / 365 as 'Anos de Idade',
+		datediff(curdate(),dt_nascimento) / 7 as Semanas, -- curdate vem de *current_day, pega o dia atual
+		day (dt_nascimento) as Dia,
+		month (dt_nascimento) as Mês,
+		year (dt_nascimento) as Ano,
+		dayofweek(dt_nascimento) as 'Dia da Semana'
+			from tb_aluno;

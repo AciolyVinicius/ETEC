@@ -1,0 +1,26 @@
+<?php
+$html .= "<div class='row'>";
+$html .= "<div class='col-12 col-md-6'>";
+$html .= "<label for='nome' class='control-label'><span class='text-danger'>*</span>Tema</label>";
+$html .= "<div class='form-group'>";
+$html .= "<input type='text' name='nome' required='' value='' class='form-control' id='nome' />";
+$html .= "<span class='text-danger'></span>";
+$html .= "</div>";
+$html .= "</div>";
+$html .= "<div class='col-6 col-md-6'>";
+$html .= "<label for='data' class='control-label'><span class='text-danger'>*</span>Data</label>";
+$html .= "<div class='form-group'>";
+$html .= "<input type='date' name='data' required='' value='' class='form-control' id='data' />";
+$html .= "<span class='text-danger'></span>";
+$html .= "</div>";
+$html .= "</div>";
+$html .= "<div class='col-12 col-md-12' id='formDescricao'>";
+$html .= "<div class='col-12 col-md-12'>";
+$html .= "<label for='aviso' class='control-label'><span class='text-danger'>*</span>Anotação</label>";
+$html .= "<div class='form-group'>";
+$html .= "<textarea class='form-control' name='aviso' required='' id='aviso' rows='8'></textarea>";
+$html .= "<span class='text-danger'></span>";
+$html .= "</div>";
+$html .= "</div>";
+$html .= "</div>";
+$html .= "</div>";

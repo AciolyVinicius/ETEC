@@ -1,0 +1,30 @@
+/*
+case<variavel>
+	when <(condição)> then instrução(ões) a ser(em)
+	executada(s)
+	
+	when<(condição)> then instrução(ões) a ser(em) 
+	executada(s)
+	
+	when<(condição)> then instrução(ões) a ser(em)
+	executada(s)
+
+	else instrução(ões) a ser(em) executada(s)
+end case
+
+ou 
+
+case
+	when <valor> then instrução(ões) a ser(em)
+	executada(s)
+	
+	when <valor> then instrução(ões) a ser(em) 
+	executada(s)
+	
+	when <valor> then instrução(ões) a ser(em)
+	executada(s)
+
+	else instrução(ões) a ser(em) executada(s)
+end case
+*/
+

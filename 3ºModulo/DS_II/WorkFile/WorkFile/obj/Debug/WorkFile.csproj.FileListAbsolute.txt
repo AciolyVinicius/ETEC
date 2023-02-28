@@ -1,0 +1,15 @@
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\bin\Debug\WorkFile.exe.config
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\bin\Debug\WorkFile.exe
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\bin\Debug\WorkFile.pdb
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\obj\Debug\WorkFile.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\obj\Debug\WorkFile.FrmDiretorio.resources
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\obj\Debug\WorkFile.Properties.Resources.resources
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\obj\Debug\WorkFile.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\obj\Debug\WorkFile.exe
+C:\Users\Aluno\Desktop\WorkFile\WorkFile\obj\Debug\WorkFile.pdb
+J:\V\Acioly\3ºModulo\DS_II\WorkFile\WorkFile\bin\Debug\WorkFile.exe.config
+J:\V\Acioly\3ºModulo\DS_II\WorkFile\WorkFile\obj\Debug\WorkFile.exe
+J:\V\Acioly\3ºModulo\DS_II\WorkFile\WorkFile\obj\Debug\WorkFile.pdb
+F:\V\Acioly\3ºModulo\DS_II\WorkFile\WorkFile\bin\Debug\WorkFile.exe.config
+F:\V\Acioly\3ºModulo\DS_II\WorkFile\WorkFile\obj\Debug\WorkFile.exe
+F:\V\Acioly\3ºModulo\DS_II\WorkFile\WorkFile\obj\Debug\WorkFile.pdb

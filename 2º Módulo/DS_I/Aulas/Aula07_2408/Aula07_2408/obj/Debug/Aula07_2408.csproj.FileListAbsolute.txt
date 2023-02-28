@@ -1,0 +1,13 @@
+c:\users\aluno\documents\visual studio 2015\Projects\Aula07_2408\Aula07_2408\bin\Debug\Aula07_2408.exe.config
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\bin\Debug\Aula07_2408.exe.config
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\bin\Debug\Aula07_2408.exe
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\bin\Debug\Aula07_2408.pdb
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.csprojResolveAssemblyReference.cache
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.lbl_aula07.resources
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.Properties.Resources.resources
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.csproj.GenerateResource.Cache
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.exe
+J:\2º Módulo\DS_I\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.pdb
+J:\2º Módulo\DS_I\Aulas\Aula07_2408\Aula07_2408\bin\Debug\Aula07_2408.exe.config
+J:\2º Módulo\DS_I\Aulas\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.exe
+J:\2º Módulo\DS_I\Aulas\Aula07_2408\Aula07_2408\obj\Debug\Aula07_2408.pdb

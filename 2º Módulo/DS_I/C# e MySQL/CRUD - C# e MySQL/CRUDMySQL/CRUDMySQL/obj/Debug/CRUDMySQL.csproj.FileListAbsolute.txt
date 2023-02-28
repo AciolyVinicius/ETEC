@@ -1,0 +1,38 @@
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe.config
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.csprojResolveAssemblyReference.cache
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_principal.resources
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Properties.Resources.resources
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.csproj.GenerateResource.Cache
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.pdb
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.exe
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.pdb
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_atualizar.resources
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_inserir.resources
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_excluir.resources
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_selecionar.resources
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\bin\Debug\MySql.Data.dll
+C:\Users\patri\Desktop\CRUDMySQL\CRUDMySQL\bin\Debug\MySql.Data.xml
+C:\Users\patri\Desktop\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe.config
+C:\Users\patri\Desktop\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.exe
+C:\Users\patri\Desktop\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.pdb
+C:\Técnico - Fritação\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe.config
+C:\Técnico - Fritação\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.exe
+C:\Técnico - Fritação\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.pdb
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe.config
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.exe
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.pdb
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.pdb
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\MySql.Data.xml
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.csprojResolveAssemblyReference.cache
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_atualizar.resources
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_excluir.resources
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_inserir.resources
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_principal.resources
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Frm_selecionar.resources
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.Properties.Resources.resources
+E:\V\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.csproj.GenerateResource.Cache
+E:\V\Acioly\2º Módulo\DS_I\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\bin\Debug\CRUDMySQL.exe.config
+E:\V\Acioly\2º Módulo\DS_I\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.exe
+E:\V\Acioly\2º Módulo\DS_I\C# e MySQL\CRUD - C# e MySQL\CRUDMySQL\CRUDMySQL\obj\Debug\CRUDMySQL.pdb

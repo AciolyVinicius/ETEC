@@ -1,0 +1,5 @@
+Aula com Msqli em valida login
+
+criar um banco de dados de nome db2i2, nele crie uma tabela
+de nome tb_usuario com os campos id_usuario, ds_login e ds_senha. Insira um registro.
+

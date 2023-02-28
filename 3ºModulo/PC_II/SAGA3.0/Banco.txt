@@ -1,0 +1,31 @@
+Create database if not exists saga;
+use saga;
+CREATE TABLE IF NOT EXISTS tb_user (
+  cd_user int not null auto_increment,
+  nm_user varchar (75),
+  cd_senha varchar (75),
+  cd_telefone int,
+  primary key (cd_user));
+
+create table if not exists tb_users_type (
+  cd_users_type int auto_increment,
+  nm_users_type varchar(40),
+  primary key (cd_users_type));
+
+alter table tb_user
+  modify column cd_telefone varchar (16);
+
+create table if not exists item_user_users_type (
+  cd_user int not null,
+  cd_users_type int not null,
+  foreign key (cd_user)
+    references tb_user (cd_user),
+  foreign key (cd_users_type)
+    references tb_users_type (cd_users_type));
+
+insert into tb_users_type (cd_users_type, nm_users_type) values
+(1, 'Diretor'),
+(2, 'Professor'),
+(3, 'Aluno');
+
+select * from tb_user;

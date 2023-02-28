@@ -1,0 +1,197 @@
+-- PROCEDURE
+DROP procedure IF EXISTS `3func`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE PROCEDURE `3func` (f1 int, f2 int, f3 int)
+BEGIN
+	select nm_func 'Nome do funcionário',
+    nm_endereco 'Endereço do funcionário'
+		from func
+			where cd_func = f1 or cd_func = f2 or cd_func = f3;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_depart`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE PROCEDURE `func_depart` ()
+BEGIN
+	select f.nm_func as 'Nome', d.cd_dpto 'Código do Departamento', f.vl_salario
+    from func f left join dpto d
+		on f.cd_dpto = d.cd_dpto
+			order by f.vl_salario;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_depart_maiorque`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `func_depart_maiorque`(valor int)
+BEGIN
+	select distinct f.nm_func as 'Nome do Funcionário', f.cd_dpto 'Código do Departamento', f.cd_dpto_gerenciar 'Código do Departamento Gerenciado'
+    from func f left join dpto d
+		on f.cd_dpto = d.cd_dpto
+			where f.vl_salario >  valor;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `projetos_funcionarios`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `projetos_funcionarios`()
+BEGIN
+	select p.nm_projeto, f.nm_func
+		from projeto p right join func_projeto fp
+			on p.cd_projeto = fp.cd_projeto
+				left join func f
+				on fp.cd_func = f.cd_func;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_dependente_filhoa`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE PROCEDURE `func_dependente_filhoa` ()
+BEGIN
+	select f.nm_func, d.nm_parentesco, d.nm_dependente 
+		from dependente d right join func_dependente fd
+			on d.cd_dependente = fd.cd_dependente
+				left join func f
+					on fd.cd_func = f.cd_func
+						where trim(lower(d.nm_parentesco)) like 'filho' or trim(lower(d.nm_parentesco)) like 'filha';
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `depart_cod`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `depart_cod`(codigo int)
+BEGIN
+	select * from dpto 
+		where cd_dpto = codigo;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_dependente`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE PROCEDURE `func_dependente` ()
+BEGIN
+	select distinct f.nm_func, d.nm_parentesco, d.nm_dependente 
+		from dependente d right join func_dependente fd
+			on d.cd_dependente = fd.cd_dependente
+				left join func f
+					on fd.cd_func = f.cd_func
+						order by f.nm_func;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_cidade_inicial`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE PROCEDURE `func_cidade_inicial` (inicial char)
+BEGIN
+	select * from func
+		where nm_endereco like concat(inicial, '%');
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_salario_maior_menor`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `func_salario_maior_menor`(maior decimal(9,2), menor decimal(9,2))
+BEGIN
+	if (maior < menor) then
+	select * from func
+		where vl_salario > maior and vl_salario < menor;
+	else
+		select * from func
+		where vl_salario > menor and vl_salario < maior;
+	end if;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `proj_verb_indefinida_xbolsas`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost`PROCEDURE `proj_verb_indefinida_xbolsas`(bolsas int)
+BEGIN
+	if (bolsas = 0) then
+	select * from projeto
+		where lower(nm_verbba) like 'não determinada';
+	else
+		select * from projeto
+		where lower(nm_verbba) like 'não determinada'
+        union
+        select * from projeto
+		where lower(nm_verbba) like concat(bolsas, '%');
+	end if;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `proj_verb_indefinida_xtipo`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost`PROCEDURE `proj_verb_indefinida_xtipo`(tipo varchar(25))
+BEGIN
+	if (tipo = '') then
+	select * from projeto
+		where lower(nm_verbba) like 'não determinada';
+	else
+		select * from projeto
+		where lower(nm_verbba) like 'não determinada'
+        union
+        select * from projeto
+		where lower(nm_tipo) like concat('%', tipo, '%');
+	end if;
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_dependente_nao_filhoa`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE PROCEDURE `func_dependente_nao_filhoa` ()
+BEGIN
+	select distinct f.nm_func, d.nm_parentesco, d.nm_dependente 
+		from dependente d right join func_dependente fd
+			on d.cd_dependente = fd.cd_dependente
+				left join func f
+					on fd.cd_func = f.cd_func
+						where trim(lower(d.nm_parentesco)) not like '%filho%' and trim(lower(d.nm_parentesco)) not like '%filha%';
+END$$
+DELIMITER ;
+
+DROP procedure IF EXISTS `func_depart_gerenciam_em_projeto`;
+DELIMITER $$
+USE `dpto_projeto`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `func_depart_gerenciam_em_projeto`()
+BEGIN
+	select distinct f.nm_func as 'Nome do Funcionário', f.cd_dpto 'Código do Departamento', f.cd_dpto_gerenciar 'Código do Departamento Gerenciado'
+    from func f left join dpto d
+		on f.cd_dpto = d.cd_dpto
+			left join projeto p
+				on f.cd_func = p.cd_cpf_func
+					where f.cd_dpto_gerenciar is not null;
+END$$
+DELIMITER ; 
+
+-- VIEWS
+USE `dpto_projeto`;
+CREATE  OR REPLACE VIEW `departamento_projetos` AS
+select p.nm_projeto 'Projeto', p.nm_tipo 'Tipo de Verba', d.nm_dpto 'Departamento'
+	from projeto p left join dpto d
+		on p.cd_dpto = d.cd_dpto;
+
+CREATE VIEW `funcionarios_projetos_horas` AS
+select f.nm_func 'Funcionário', fp.qt_hora 'Hora trabalhada', p.nm_projeto 'Projeto'
+from func f right join func_projeto fp
+	on f.cd_func = fp.cd_func
+	left join projeto p
+		on fp.cd_projeto = p.cd_projeto;
+        
+CREATE VIEW `funcionarios_dependentes` AS
+select f.nm_func 'Funcionário', d.nm_parentesco 'Parentesco', d.nm_dependente
+from func f right join func_dependente fp
+	on f.cd_func = fp.cd_func
+	left join dependente d
+		on fp.cd_dependente = d.cd_dependente;

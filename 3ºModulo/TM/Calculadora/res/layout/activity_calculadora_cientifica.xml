@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="vertical">
+<LinearLayout 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+
+    
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite os valores e escolha a operação:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 (a, Divisor, Expoente, Raiz, Fatorial, Graus, Fibonacci) - Valor Principal" />
+
+    <EditText
+        android:id="@+id/txt_num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 (b, Dividendo, Base Expoente, Base Logaritmo, Base Raiz)" />
+
+    <EditText
+        android:id="@+id/txt_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 (c Bhaskara)" />
+
+    <EditText
+        android:id="@+id/txt_num3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha a função:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnBhaskara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BHASKARA" />
+
+    <Button
+        android:id="@+id/btnLogaritimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGARITIMO" />
+
+    <Button
+        android:id="@+id/btnDivisao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIVISÃO" />
+
+    <Button
+        android:id="@+id/btnExponencial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EXPONENCIAL" />
+
+    <Button
+        android:id="@+id/btnRaiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RAIZ" />
+
+    <Button
+        android:id="@+id/btnFatorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FATORIAL" />
+
+    <Button
+        android:id="@+id/btnFibonacci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIBONACCI" />
+
+    <Button
+        android:id="@+id/btnSeno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SENO" />
+
+    <Button
+        android:id="@+id/btnCosseno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COSSENO" />
+
+    <Button
+        android:id="@+id/btnTangente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TANGENTE" />
+  
+</LinearLayout>  </ScrollView>

@@ -1,0 +1,5 @@
+	5 pesquisa simples 
+	5 pesquisas c/ join 2 a 3 tabelas
+	6 pesquisas c/ join acima de 3 tabelas
+	4 pesquisas c/ subselect
+	2 pesquisas mistas join e subselect

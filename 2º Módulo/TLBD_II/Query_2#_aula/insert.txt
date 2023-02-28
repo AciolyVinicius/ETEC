@@ -1,0 +1,142 @@
+show databases;
+
+
+
+use estoque;
+
+
+
+show tables;
+
+
+insert into tb_categoria (cd_categoria, nm_categoria) values(
+
+(1, 'Roupa Adulta Masculina'),
+
+(2, 'Roupa Adulta Feminina'),
+
+3, 'Roupa Adulta Unissex',
+
+4, 'Roupa Juvenil Masculina',
+
+5, 'Roupa Juvenil Feminina',
+
+6, 'Roupa Juvenil Unissex',
+
+7, 'Roupa Infantil Masculina',
+
+8, 'Roupa Infantil Feminina',
+
+9, 'Roupa Infantil Unissex',
+
+10, 'Roupa para Animal'
+
+);
+
+
+
+insert into tb_produto (cd_produto, nm_produto, qt_estoque, cd_categoria) values(
+
+1, Calça, 10, 7,
+
+2, Calça, 100, 6,
+
+3, Calça, 50, 4,
+
+4, Camisa, 40, 8,
+
+5, Camisa, 120, 9,
+
+6, Camisa, 5, 5,
+
+7, Sunga, 30, 1,
+
+8, Biquini, 10, 2,
+
+9, 'Roupa de Surf', 20, 3,
+
+10,  'Roupa de Guaxinim', 10, 10
+
+);
+
+
+
+
+insert into tb_cliente (cd_cliente, nm_cliente, cd_cpf) values(
+1, 'João de Castro', 11223344556,
+2, 'Guilherme Pedro', 22113344556,
+3, 'Vinicius Gasthein', 33112244556,
+4, 'Matheus de Guincho', 44112255336,
+5, 'Minfausto Silva', 66112233445,
+6, 'Macarena Morena', 55662233441,
+7, 'Leornardo Dantas', 12123434557,
+8, 'Gabriel de Bastilho', 23231414565,
+9, 'Rafael Mysql', 14142525363,
+10, 'Guilherme Pinto', 11112222588
+);
+
+insert into tb_notas_saida (cd_saida, cd_cliente, dt_saida) values(
+1, 1, '2000-01-02',
+2, 3, '2000-01-06',
+3, 2, '2000-01-09',
+4, 5, '2001-02-12',
+5, 4, '2001-03-12',
+6, 10, '2001-03-10',
+7, 8, '2001-04-04',
+8, 7, '2006-06-06',
+9, 9, '2008-04-05',
+10, 6, '2017-12-12'
+);
+
+insert into item_saida (cd_saida, cd_produto, qt_saida_produto, vl_produto) values(
+1, 2, 10, 45.00,
+2, 3, 1, 30.00,
+3, 5, 3, 40.00,
+4, 7, 1, 100.00,
+5, 8, 1, 200.00,
+6, 9, 20, 15.00,
+7, 1, 5, 30.00,
+8, 10, 7, 115.00,
+9, 4, 8, 220.00,
+10, 6, 2, 325.00
+);
+
+insert into tb_fornecedor (cd_fornecedor, nm_fornecedor, cd_cnpj) values(
+1, 'Hiring',  01010101010101,
+2, 'Lacuste', 21212121212121,
+3, 'Oakley',  03030302020202,
+4, 'Polu',    56565656898754,
+5, 'Adidus',  23230202458798,
+6, 'Niki',    54659865322154,
+7, 'Puna',    21023265956202,
+8, 'Reebuk',  54845465952135,
+9, 'Umbre',   21215487986532,
+10, 'Pedigre',65656565656565
+);
+
+insert into tb_nota_entrada (cd_entrada, cd_fornecedor, dt_entrada_produto) values(
+1, 1, '2001-03-12',
+2, 3, '2005-11-02',
+3, 10, '2012-06-18',
+4, 4, '2002-05-07'
+5, 7, '2001-02-20',
+6, 2, '2000-01-01',
+7, 9, '1999-12-20',
+8, 5, '1999-12-12',
+9, 8, '1999-04-12',
+10, 6, '1999-05-05'
+);
+
+insert into item_entrada (cd_entrada, cd_produto, qt_entrada_produto, vl_produto) values(
+1, 10, 170, 5000.00,
+2, 9, 150, 10000.00,
+3, 7, 500, 8000.00,
+4, 8, 600, 600.00,
+5, 4, 160, 750.00,
+6, 5, 210, 800.00,
+7, 6, 500, 10500.00,
+8, 1, 250, 605.00,
+9, 3, 250, 7500.00,
+10, 2, 600, 9000.00
+);
+

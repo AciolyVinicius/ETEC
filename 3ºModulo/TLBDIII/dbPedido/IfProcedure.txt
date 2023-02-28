@@ -1,0 +1,18 @@
+if <(condicao)> then
+	
+	instrucao(oes) a ser(em) executada(s) se a condicao
+		
+	for verdadeira
+
+elseif <(condicao)> 
+	then
+	instrucao(oes) a ser(em) executada(s) se a condicao
+	
+	for verdadeira
+
+else
+	instrucao(oes) a ser(em) executada(s) se a condicao
+	
+	for falsa
+
+end if

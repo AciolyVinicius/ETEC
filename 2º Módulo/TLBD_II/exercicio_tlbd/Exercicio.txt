@@ -1,0 +1,12 @@
+/*Obter o numero, valor e a data das vendas realizadas para consumidor 1*/
+/*Obter o nome do consumidor 1 e a soma das vendas para ele realizadas*/
+/*Obter o nome do consumidor 1 e a média das vendas para ele realizadas*/
+/*Obter o nome do consumidor 1, a menor e a maior venda para ele realizada*/
+/*Mostrar a hirerarquia (com numero e nome) dos departamentos da empresa*/
+
+/*Verificar se os valores das vendas batem com a soma dos respectivos itens de venda*/
+/*Listar as vendas (número e valor) e a respectiva data das notas fiscais*/
+/*Listar vendas (número, valor e natureza) que geraram contas e receber. 
+Listar o número da conta, o valor e a data de vencimento*/
+/*Listar o numero e a descrição dos produtos da empresa, associados aos
+respectivos departamentos (numero e nome)*/

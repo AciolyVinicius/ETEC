@@ -1,0 +1,40 @@
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe.config
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.csprojResolveAssemblyReference.cache
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_cadastrar.resources
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_entrar.resources
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_inicio.resources
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Properties.Resources.resources
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.csproj.GenerateResource.Cache
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.pdb
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\bin\Debug\MySql.Data.dll
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\bin\Debug\MySql.Data.xml
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.exe
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.pdb
+C:\Users\patri\Desktop\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_principal.resources
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe.config
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.exe
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.pdb
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.pdb
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\MySql.Data.dll
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\MySql.Data.xml
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.csprojResolveAssemblyReference.cache
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_cadastrar.resources
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_entrar.resources
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_inicio.resources
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Frm_principal.resources
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.Properties.Resources.resources
+C:\Técnico - Fritação\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.csproj.GenerateResource.Cache
+E:\V\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe.config
+E:\V\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.exe
+E:\V\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.pdb
+F:\V\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe.config
+F:\V\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.exe
+F:\V\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.pdb
+H:\V\Acioly\2º Módulo\DS_I\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe.config
+H:\V\Acioly\2º Módulo\DS_I\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.exe
+H:\V\Acioly\2º Módulo\DS_I\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.pdb
+F:\V\Acioly\2º Módulo\DS_I\C# e MySQL\Teste_mensagem\Teste_mensagem\bin\Debug\Teste_mensagem.exe.config
+F:\V\Acioly\2º Módulo\DS_I\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.exe
+F:\V\Acioly\2º Módulo\DS_I\C# e MySQL\Teste_mensagem\Teste_mensagem\obj\Debug\Teste_mensagem.pdb

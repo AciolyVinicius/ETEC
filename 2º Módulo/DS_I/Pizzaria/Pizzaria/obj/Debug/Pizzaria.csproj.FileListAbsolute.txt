@@ -1,0 +1,15 @@
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\bin\Debug\Pizzaria.exe.config
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\bin\Debug\Pizzaria.exe
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\bin\Debug\Pizzaria.pdb
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\obj\Debug\Pizzaria.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\obj\Debug\Pizzaria.pizzaria.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\obj\Debug\Pizzaria.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\obj\Debug\Pizzaria.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\obj\Debug\Pizzaria.exe
+C:\Users\Aluno\Desktop\Pizzaria\Pizzaria\obj\Debug\Pizzaria.pdb
+K:\V\Acioly\2º Módulo\DS_I\Pizzaria\Pizzaria\bin\Debug\Pizzaria.exe.config
+K:\V\Acioly\2º Módulo\DS_I\Pizzaria\Pizzaria\obj\Debug\Pizzaria.exe
+K:\V\Acioly\2º Módulo\DS_I\Pizzaria\Pizzaria\obj\Debug\Pizzaria.pdb
+J:\V\Acioly\2º Módulo\DS_I\Pizzaria\Pizzaria\bin\Debug\Pizzaria.exe.config
+J:\V\Acioly\2º Módulo\DS_I\Pizzaria\Pizzaria\obj\Debug\Pizzaria.exe
+J:\V\Acioly\2º Módulo\DS_I\Pizzaria\Pizzaria\obj\Debug\Pizzaria.pdb

@@ -1,0 +1,129 @@
+H:\TCC\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_home.resources
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+H:\TCC\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe
+H:\TCC\Banca C#\SAGA\SAGA\bin\Debug\SAGA.pdb
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_index.resources
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_login.resources
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+F:\TCC\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+F:\TCC\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe
+F:\TCC\Banca C#\SAGA\SAGA\bin\Debug\SAGA.pdb
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_home.resources
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_index.resources
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_login.resources
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+F:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+H:\TCC\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_notas.resources
+F:\V\SAGA\SAGA\bin\Debug\SAGA.exe.config
+F:\V\SAGA\SAGA\obj\Debug\SAGA.exe
+F:\V\SAGA\SAGA\obj\Debug\SAGA.pdb
+F:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_home.resources
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_index.resources
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_login.resources
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_notas.resources
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+F:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+F:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe
+F:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.pdb
+F:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.dll
+G:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+G:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+G:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.pdb
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.dll
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_home.resources
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_index.resources
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_login.resources
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_notas.resources
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_perfil.resources
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.Entity.dll
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Web.dll
+E:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.SAGA.exe.config
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.dll
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.Entity.dll
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.Entity.EF6.dll
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Web.dll
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.SAGA.exe.config
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_frequencia.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_home.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_index.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_login.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_notas.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_perfil.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+J:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+J:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.pdb
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\SAGA.pdb
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.dll
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.Entity.dll
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Data.Entity.EF6.dll
+K:\V\Banca C#\SAGA\SAGA\bin\Debug\MySql.Web.dll
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.SAGA.exe.config
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_frequencia.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_home.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_index.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_login.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_notas.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.frm_perfil.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+K:\V\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA\SAGA\bin\Debug\SAGA.exe.config
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA\SAGA\obj\Debug\SAGA.exe
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA\SAGA\obj\Debug\SAGA.pdb
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\bin\Debug\SAGA.exe.config
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.exe
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.pdb
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.csprojResolveAssemblyReference.cache
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.csproj.SAGA.exe.config
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_cadastrar.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_frequencia.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_home.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_index_aluno.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_login.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_notas.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.frm_perfil.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.Properties.Resources.resources
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.csproj.GenerateResource.Cache
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\bin\Debug\SAGA.exe
+E:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\bin\Debug\SAGA.pdb
+F:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\bin\Debug\SAGA.exe.config
+F:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.exe
+F:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.pdb
+H:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\bin\Debug\SAGA.exe.config
+H:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.exe
+H:\V\Acioly\2º Módulo\DS_I\Banca C#\SAGA - Copia\SAGA\obj\Debug\SAGA.pdb

@@ -1,0 +1,4 @@
+c:\users\aluno\documents\visual studio 2015\Projects\LISTA1_EXER8_MGVM_VAES\LISTA1_EXER8_MGVM_VAES\bin\Debug\LISTA1_EXER8_MGVM_VAES.exe
+c:\users\aluno\documents\visual studio 2015\Projects\LISTA1_EXER8_MGVM_VAES\LISTA1_EXER8_MGVM_VAES\bin\Debug\LISTA1_EXER8_MGVM_VAES.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\LISTA1_EXER8_MGVM_VAES\LISTA1_EXER8_MGVM_VAES\obj\Debug\LISTA1_EXER8_MGVM_VAES.exe
+c:\users\aluno\documents\visual studio 2015\Projects\LISTA1_EXER8_MGVM_VAES\LISTA1_EXER8_MGVM_VAES\obj\Debug\LISTA1_EXER8_MGVM_VAES.pdb

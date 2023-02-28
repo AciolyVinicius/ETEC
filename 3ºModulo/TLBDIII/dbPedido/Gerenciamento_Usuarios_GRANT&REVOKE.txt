@@ -1,0 +1,18 @@
+-- gerenciamento de usuarios GRANT e REVOKE
+
+-- Nível Global
+/* esse nível de prevuilégio permite acesso do usuário apenas às tabelas de
+um determinado servidor. Os privilégios são armazenados na tabela mysql.user.*/
+
+-- Nível de Banco de Dados
+/* permite o acesso do usuário apenas às tabelas de um determinado banco de
+dados. Os privilégios desta categoria são armazenados nas tabelas mysql.db
+e mysql.host */
+
+-- Nível de Tabelas
+/* possibilita acesso do usuário apenas às tabelas de uma determinada tabela.
+Os privilégios desta categoria são armazenados na tabela mysql.tables_priv */
+
+-- Nível de Colunas
+/* permite o acesso do usuário apenas a uma coluna em uma determinada tabela.
+Os privilégios desta categoria são armazenados na tabela mysql.columns_priv */

@@ -1,0 +1,145 @@
+<?php
+
+class InstituicaoFormularioView {
+
+	private $instituicao;
+	private $controller;
+	
+	private function gerar(){
+
+		include_once "view/layout/header.php";
+		$html .= "<!-- Content Wrapper. Contains page content -->";
+		$html .= "<div class='content-wrapper'>";
+		$html .= "<!-- Main content -->";
+		$html .= "<section class='content'>";
+		$html .= "<div class='row'>";
+		$html .= "<div class='col-12 col-md-12'>";
+		$html .= "<div class='box'>";
+		$html .= "<div class='box-header'>";
+		$html .= "<div class='col-12 col-md-8'>";
+		$html .= "<h1><i class='fa fa-university' aria-hidden='true'></i> " . $this->controller ." Instituição</h1>	";
+		$html .= "</div>";
+		$html .= "<div class='col-12 col-md-4'>";
+		$html .= "<h1><a href='" . DOCUMENT_ROOT . "/Detalhar/instituicao' id='btnListagem' class='btn btn-default pull-right'><i class='fa fa-list'></i> Instituição</a></h1>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<hr>";
+		$html .= "<form method='post' action='" . DOCUMENT_ROOT . "/" . $this->controller ."/instituicoes'>";
+		$html .= "<div class='box-body'>";
+		$html .= "<div class='row clearfix'>";
+		$html .= "<div class='col-12 col-md-6'>";
+		$html .= "<label for='nome' class='control-label'><span class='text-danger'>*</span>Nome</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' name='nome' required='' value='" . $this->instituicao->getNome() . "' class='form-control' id='nome' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<label for='nome_fantasia' class='control-label'><span class='text-danger'>*</span>Nome Fantasia</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' name='nome_fantasia' required='' value='" . $this->instituicao->getFantasia() . "' class='form-control' id='nome_fantasia' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<label for='cnpj' class='control-label'><span class='text-danger'>*</span>Cnpj</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='cnpj' value='" . $this->instituicao->getCnpj() . "' OnKeyPress='formatar('##.###.###/####-##', this)' maxlength='18' class='form-control' id='cnpj' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<label for='contato1' class='control-label'><span class='text-danger'>*</span>Contato Primário</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='contato1' value='" . $this->instituicao->getContato1() . "' OnKeyPress='formatar('## ####-####', this)' maxlength='12' class='form-control' id='contato1' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<label for='contato2' class='control-label'>Contato Secundário</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' name='contato2' value='" . $this->instituicao->getContato2() . "' OnKeyPress='formatar('## #####-####', this)' maxlength='13' class='form-control' id='contato2' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<label for='email' class='control-label'><span class='text-danger'>*</span>Email</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='email' required='' name='email' value='" . $this->instituicao->getEmail() . "' class='form-control' id='email' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<div class='col-12 col-md-6'>";
+		$html .= "<label for='cep' class='control-label'><span class='text-danger'>*</span>Cep</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='cep' value='" . $this->instituicao->getCep() . "' class='form-control' id='cep' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<div id='endRua' class='col-12 col-md-9'>";
+		$html .= "<label for='rua' class='control-label'><span class='text-danger'>*</span>Rua</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='rua' value='" . $this->instituicao->getRua() . "' class='form-control' id='endereco' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<div id='endNum' class='col-12 col-md-3'>";
+		$html .= "<label for='numeracao' class='control-label'><span class='text-danger'>*</span>Numeracao</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='numeracao' value='" . $this->instituicao->getNumeracao() . "' class='form-control' id=''/>";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<label for='bairro' class='control-label'><span class='text-danger'>*</span>Bairro</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='bairro' value='" . $this->instituicao->getBairro() . "' class='form-control' id='bairro' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<div id='endCid' class='col-12 col-md-9'>";
+		$html .= "<label for='cidade' class='control-label'><span class='text-danger'>*</span>Cidade</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='cidade' value='" . $this->instituicao->getCidade() . "' class='form-control' id='cidade' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<div id='endEst' class='col-12 col-md-3'>";
+		$html .= "<label for='estado' class='control-label'><span class='text-danger'>*</span>Estado</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='estado' value='" . $this->instituicao->getEstado() . "' class='form-control' id='estado' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<label for='mec' class='control-label'><span class='text-danger'>*</span>Mec</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='mec' value='" . $this->instituicao->getMec() . "' class='form-control' id='mec' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "<label for='alvara' class='control-label'><span class='text-danger'>*</span>Alvara</label>";
+		$html .= "<div class='form-group'>";
+		$html .= "<input type='text' required='' name='alvara' value='" . $this->instituicao->getAlvara() . "' class='form-control' id='alvara' />";
+		$html .= "<span class='text-danger'></span>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "<div class='box-footer'>";
+		$html .= "<div class='col-6 col-md-6'>";
+		$html .= "<button id='btnCadastrar' type='submit' class='btn btn-success'>";
+		$html .= "<i class='fa fa-check'></i> Salvar";
+		$html .= "</button>";
+		$html .= "</form>";
+		$html .= "<form action='" . DOCUMENT_ROOT . "/Listar/instituicao'>";
+		$html .= "</div>";
+		$html .= "<div class='col-6 col-md-6'>";
+		$html .= "<button id='btnCancelar' type='submit' class='btn btn-danger'>";
+		$html .= "<i class='fa fa-times'></i> Cancelar";
+		$html .= "</button>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "</form>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "</div>";
+		$html .= "</section>";
+		$html .= "<!-- /.content -->";
+		$html .= "</div>";
+		include_once "view/layout/footer.php";
+		
+		return $html;
+	}
+	
+	public function mostrar($instituicao, $controller){
+		$this->instituicao = $instituicao;
+		$this->controller = $controller;
+		echo $this->gerar();
+	}
+}

@@ -1,0 +1,18 @@
+Configuração das portas do router
+Router>
+Router>enable
+Router#
+Router#configure terminal
+Router#(config)#
+Router#(config)#interface fastEthernet 1/0 (tipo e nº Porta)
+Router#(config-if)#
+Router#(config-if)#no shutdown
+Router#(config-if)#ip address 192.168.0.1 255.255.255.0
+
+Salvar toda a configuração
+Router#copy running-config startup-config
+
+Fazendo a tabela de roteamento RIP
+Router#configure terminal
+Router(config)#router rip
+Router(config-router)#network 10.0.0.0 (Para todas as redes)

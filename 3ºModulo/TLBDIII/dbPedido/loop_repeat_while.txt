@@ -1,0 +1,18 @@
+/*
+[rotulo:]loop
+	instrução(ões)
+end loop [rotulo];
+leave rotulo;
+*/
+
+/*
+[rotulo:]repeat
+	instrução(ões)
+util(condições) end repeat[rotulo];
+*/
+
+/*
+[rotulo:]while(condicao) do
+	instrução(ões)
+end while[rotulo];
+*/

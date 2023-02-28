@@ -1,0 +1,32 @@
+/* Listar três funcionarios e seus respectivos endereços */
+
+/* Listar os funcioarios, o código do departamento em que trabalham e seus respectivos salários, iniciando com o maior valor */
+
+/* Listar os funcioarios, cujo o salario é maior que ______, mostrar o respectivo salario e o departamento que possivelmente eles gerenciam */
+
+/* Listar os projetos que tenham funcionários associados */
+
+/* Listar o nome dos dependentes que sao filhos dos funcionarios */
+
+/* Listar os departamentos codificados com ______ ou mais, mostrar tambem seu endereço */
+
+/* Listar o parentesco dos dependentes */
+ 
+/* Selecionar os funcinários que morem em cidade que comece com _______ */
+
+/* Listar os funcionários que recebem um salário maior que ______ até ______ */
+
+/* Selecionar os projetos de verbas indeterminadas e os que possuem ______*/
+
+/* Selecionar os dependentes que não são filhos ou filhas */
+	
+/* Selecionar os funcionarios que gerenciam departamento e estão associados a projetos.*/
+
+??/*selecionar os dependentes dos funcioanarios que trabalham em departamento e em projetos*/
+
+/* Visão: departamento_projetos: selecione o tipo de verba do projetos que os departamentos controlam */
+
+/* Visão: funcionarios_projetos_horas: selecione o numero de horas que os funcionarios trabalham em projeto. */
+
+/* Visão: funcionarios_dependentes: seleciona os dependentes dos funcionarios */
+-------terminado

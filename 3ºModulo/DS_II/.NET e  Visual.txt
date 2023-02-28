@@ -1,0 +1,6 @@
+Em visualc#
+Na parte web, escolha wcf service application
+Botão direito no nome do projeto, escolho a opção "add" e "new item",
+em Web, e ponho na opção "Web Service (ASMX)"
+Na parte do desktop, botao direito, "add" e "Service reference",
+deixe a parte web rodando e ponha sua url no address

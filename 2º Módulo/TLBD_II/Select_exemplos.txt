@@ -1,0 +1,19 @@
+DOIS TIPOS DE INSERT
+-Explicito (o formulário não precisa seguir a ordem de insert do banco)
+-Implicito (precisa seguir a ordem do banco)
+
+
+Como fazer insert ->
+**
+Insert into nome da tabela
+(atributo1, atributo2, atributo3)
+values(valor1, 'valor2', 'valor3'); 
+--> '' é pra se o valor for alfanumerico ou data e hora
+
+**
+Insert into nome da tabela values(valor1, 'valor2', 'valor3');
+
+
+
+SELECT É UM READ NO BANCO DE DADOS
+--> * é um coringa, apresenta todos os dados

@@ -1,0 +1,14 @@
+procedimento(stored procedure)
+é similar a descrição de sub-rotina, mas a partir da lingaguem
+sql é uma coleção de sub-rotinas ou uma coleção de 
+comandos armazenados que serão utilizados para gerenciar
+um banco de dados toda vez que uma determinada tarefa
+seja realizada
+
+delimiter [definição de caractere de finalização]
+create procedure <nome> ([parametro]) [caracteristica]
+	[rotulo:]begin
+			declare <variavel><tipo>[default Valor];
+			instrução(ões)
+		end [rotulo][uso de caracteres de finalização definido]
+delimiter;

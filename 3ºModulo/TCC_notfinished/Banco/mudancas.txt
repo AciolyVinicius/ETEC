@@ -1,0 +1,39 @@
+tb_arquivo.ds_arquivo vai ter que ser retirada por 
+ser uma coluna desnecessária
+
+as permissões serão retiradas. com o nivel de permissão
+o privilégio do usuário no banco será definido através
+do user, utilizaremos grant e revoke.
+
+os varchar de 255 foram convertidos em longtext por 
+causa da liberdade que será dada ao usuário para digitar
+textos longuíssimos, possíveis em aula
+
+não tem o por que de ter uma tabela arquivo e uma tabela
+anotacao, uma vez que ambas guardam informações de notas
+
+a tb_arquivo deveria estar linkado a instituicao, uma vez
+que terá que guardar seus arquivos. Além do mais, existem
+três tipos de arquivos arquivos: corrente, intermediario 
+e permanente. *Devo pegar informações a mais com o Lucas
+Ademais, não somos um OneDrive pra guardar tudo dos cara
+
+dentro da tb_anotacao não é necessário ter um nm_anotacao
+e um ds_anotacao. Ou um ou outro, se não fica algo
+cansativo.
+
+tb_avaliacao nao tem por que ter ds_avaliacao, uma vez que 
+o nm_avaliacao explica muita coisa.
+seria interessante ter um im_avaliacao_corrigida para ter como
+prova da nota do aluno
+
+em tb_aviso, o cd_curso e o cd_turma devem poder ser nulls
+pois, caso haja um aviso global, os campos poderão ser nulos
+o que fará com que todo o corpo estudantil possa ver o 
+aviso global inserido
+
+tb_lembrete não precisa de data de início, só de término.
+e mesmo assim o banco não deve apagar do nada o lembrete
+pois o aluno pode se atrasar. O lembrete de ser apagado no
+máximo 4 dias depois da data de término, que poderia ser 
+mutável, para caso de engano

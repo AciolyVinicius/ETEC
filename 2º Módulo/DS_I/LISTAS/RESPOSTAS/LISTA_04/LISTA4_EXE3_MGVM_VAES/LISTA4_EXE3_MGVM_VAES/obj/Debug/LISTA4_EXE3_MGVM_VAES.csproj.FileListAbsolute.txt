@@ -1,0 +1,12 @@
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\bin\Debug\LISTA4_EXE3_MGVM_VAES.exe.config
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\bin\Debug\LISTA4_EXE3_MGVM_VAES.exe
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\bin\Debug\LISTA4_EXE3_MGVM_VAES.pdb
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.csprojResolveAssemblyReference.cache
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.Exame.resources
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.Properties.Resources.resources
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.csproj.GenerateResource.Cache
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.exe
+c:\users\viníciusaciolyelias\documents\visual studio 2015\Projects\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.pdb
+E:\V\Acioly\2º Módulo\DS_I\LISTAS\RESPOSTAS\LISTA_04\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\bin\Debug\LISTA4_EXE3_MGVM_VAES.exe.config
+E:\V\Acioly\2º Módulo\DS_I\LISTAS\RESPOSTAS\LISTA_04\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.exe
+E:\V\Acioly\2º Módulo\DS_I\LISTAS\RESPOSTAS\LISTA_04\LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES\obj\Debug\LISTA4_EXE3_MGVM_VAES.pdb

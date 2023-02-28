@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertDepart">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="local" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDepartResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDepartResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDependente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idf" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idd" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="parente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDependenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDependenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFunc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="end" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="salario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idpto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idptoger" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFuncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertFuncResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertProj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="verba" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="idpto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cpffunc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertProjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertProjResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFuncProj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idf" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hora" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertFuncProjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertFuncProjResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiDependente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idf" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiDependenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcluiDependenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDependente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="par" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDependenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDependenteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiDpto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiDptoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcluiDptoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDpto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="local" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDptoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDptoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiFunc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiFuncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcluiFuncResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFunc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="end" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sal" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dpger" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFuncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateFuncResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiProjeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiProjetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcluiProjetoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProjeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="conc" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="verba" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cdf" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProjetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProjetoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProjetoIc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="conc" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateProjetoIcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateProjetoIcResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFuncProjeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idf" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="aidf" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="aidp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hora" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFuncProjetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateFuncProjetoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiFuncProjeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idf" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExcluiFuncProjetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExcluiFuncProjetoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Departamento">
+        <s:complexType />
+      </s:element>
+      <s:element name="DepartamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DepartamentoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Dependente">
+        <s:complexType />
+      </s:element>
+      <s:element name="DependenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DependenteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Funcionario">
+        <s:complexType />
+      </s:element>
+      <s:element name="FuncionarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FuncionarioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjetoAndamento">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProjetoAndamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjetoAndamentoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjetoConcluido">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProjetoConcluidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjetoConcluidoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Projeto">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProjetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjetoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjetoAssociadoFunc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="proj" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjetoAssociadoFuncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjetoAssociadoFuncResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjetoNaoAssociadoFunc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="proj" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjetoNaoAssociadoFuncResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjetoNaoAssociadoFuncResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertDepartSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDepart" />
+  </wsdl:message>
+  <wsdl:message name="InsertDepartSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDepartResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertDependenteSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertDependente" />
+  </wsdl:message>
+  <wsdl:message name="InsertDependenteSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDependenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertFuncSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertFunc" />
+  </wsdl:message>
+  <wsdl:message name="InsertFuncSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertFuncResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertProjSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertProj" />
+  </wsdl:message>
+  <wsdl:message name="InsertProjSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertProjResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertFuncProjSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertFuncProj" />
+  </wsdl:message>
+  <wsdl:message name="InsertFuncProjSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertFuncProjResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiDependenteSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluiDependente" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiDependenteSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluiDependenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDependenteSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDependente" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDependenteSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDependenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiDptoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluiDpto" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiDptoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluiDptoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDptoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDpto" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDptoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDptoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiFuncSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluiFunc" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiFuncSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluiFuncResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFuncSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFunc" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFuncSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFuncResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiProjetoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluiProjeto" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiProjetoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluiProjetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProjetoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProjeto" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProjetoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProjetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProjetoIcSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateProjetoIc" />
+  </wsdl:message>
+  <wsdl:message name="UpdateProjetoIcSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateProjetoIcResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFuncProjetoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFuncProjeto" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFuncProjetoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFuncProjetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiFuncProjetoSoapIn">
+    <wsdl:part name="parameters" element="tns:ExcluiFuncProjeto" />
+  </wsdl:message>
+  <wsdl:message name="ExcluiFuncProjetoSoapOut">
+    <wsdl:part name="parameters" element="tns:ExcluiFuncProjetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DepartamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:Departamento" />
+  </wsdl:message>
+  <wsdl:message name="DepartamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:DepartamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DependenteSoapIn">
+    <wsdl:part name="parameters" element="tns:Dependente" />
+  </wsdl:message>
+  <wsdl:message name="DependenteSoapOut">
+    <wsdl:part name="parameters" element="tns:DependenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="FuncionarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Funcionario" />
+  </wsdl:message>
+  <wsdl:message name="FuncionarioSoapOut">
+    <wsdl:part name="parameters" element="tns:FuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoAndamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:ProjetoAndamento" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoAndamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProjetoAndamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoConcluidoSoapIn">
+    <wsdl:part name="parameters" element="tns:ProjetoConcluido" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoConcluidoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProjetoConcluidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoSoapIn">
+    <wsdl:part name="parameters" element="tns:Projeto" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProjetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoAssociadoFuncSoapIn">
+    <wsdl:part name="parameters" element="tns:ProjetoAssociadoFunc" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoAssociadoFuncSoapOut">
+    <wsdl:part name="parameters" element="tns:ProjetoAssociadoFuncResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoNaoAssociadoFuncSoapIn">
+    <wsdl:part name="parameters" element="tns:ProjetoNaoAssociadoFunc" />
+  </wsdl:message>
+  <wsdl:message name="ProjetoNaoAssociadoFuncSoapOut">
+    <wsdl:part name="parameters" element="tns:ProjetoNaoAssociadoFuncResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="InsertDepart">
+      <wsdl:input message="tns:InsertDepartSoapIn" />
+      <wsdl:output message="tns:InsertDepartSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertDependente">
+      <wsdl:input message="tns:InsertDependenteSoapIn" />
+      <wsdl:output message="tns:InsertDependenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFunc">
+      <wsdl:input message="tns:InsertFuncSoapIn" />
+      <wsdl:output message="tns:InsertFuncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertProj">
+      <wsdl:input message="tns:InsertProjSoapIn" />
+      <wsdl:output message="tns:InsertProjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertFuncProj">
+      <wsdl:input message="tns:InsertFuncProjSoapIn" />
+      <wsdl:output message="tns:InsertFuncProjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiDependente">
+      <wsdl:input message="tns:ExcluiDependenteSoapIn" />
+      <wsdl:output message="tns:ExcluiDependenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDependente">
+      <wsdl:input message="tns:UpdateDependenteSoapIn" />
+      <wsdl:output message="tns:UpdateDependenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiDpto">
+      <wsdl:input message="tns:ExcluiDptoSoapIn" />
+      <wsdl:output message="tns:ExcluiDptoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDpto">
+      <wsdl:input message="tns:UpdateDptoSoapIn" />
+      <wsdl:output message="tns:UpdateDptoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiFunc">
+      <wsdl:input message="tns:ExcluiFuncSoapIn" />
+      <wsdl:output message="tns:ExcluiFuncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFunc">
+      <wsdl:input message="tns:UpdateFuncSoapIn" />
+      <wsdl:output message="tns:UpdateFuncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiProjeto">
+      <wsdl:input message="tns:ExcluiProjetoSoapIn" />
+      <wsdl:output message="tns:ExcluiProjetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjeto">
+      <wsdl:input message="tns:UpdateProjetoSoapIn" />
+      <wsdl:output message="tns:UpdateProjetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjetoIc">
+      <wsdl:input message="tns:UpdateProjetoIcSoapIn" />
+      <wsdl:output message="tns:UpdateProjetoIcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuncProjeto">
+      <wsdl:input message="tns:UpdateFuncProjetoSoapIn" />
+      <wsdl:output message="tns:UpdateFuncProjetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiFuncProjeto">
+      <wsdl:input message="tns:ExcluiFuncProjetoSoapIn" />
+      <wsdl:output message="tns:ExcluiFuncProjetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Departamento">
+      <wsdl:input message="tns:DepartamentoSoapIn" />
+      <wsdl:output message="tns:DepartamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Dependente">
+      <wsdl:input message="tns:DependenteSoapIn" />
+      <wsdl:output message="tns:DependenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Funcionario">
+      <wsdl:input message="tns:FuncionarioSoapIn" />
+      <wsdl:output message="tns:FuncionarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoAndamento">
+      <wsdl:input message="tns:ProjetoAndamentoSoapIn" />
+      <wsdl:output message="tns:ProjetoAndamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoConcluido">
+      <wsdl:input message="tns:ProjetoConcluidoSoapIn" />
+      <wsdl:output message="tns:ProjetoConcluidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Projeto">
+      <wsdl:input message="tns:ProjetoSoapIn" />
+      <wsdl:output message="tns:ProjetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoAssociadoFunc">
+      <wsdl:input message="tns:ProjetoAssociadoFuncSoapIn" />
+      <wsdl:output message="tns:ProjetoAssociadoFuncSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoNaoAssociadoFunc">
+      <wsdl:input message="tns:ProjetoNaoAssociadoFuncSoapIn" />
+      <wsdl:output message="tns:ProjetoNaoAssociadoFuncSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDepart">
+      <soap:operation soapAction="http://tempuri.org/InsertDepart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDependente">
+      <soap:operation soapAction="http://tempuri.org/InsertDependente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFunc">
+      <soap:operation soapAction="http://tempuri.org/InsertFunc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertProj">
+      <soap:operation soapAction="http://tempuri.org/InsertProj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFuncProj">
+      <soap:operation soapAction="http://tempuri.org/InsertFuncProj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiDependente">
+      <soap:operation soapAction="http://tempuri.org/ExcluiDependente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDependente">
+      <soap:operation soapAction="http://tempuri.org/UpdateDependente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiDpto">
+      <soap:operation soapAction="http://tempuri.org/ExcluiDpto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDpto">
+      <soap:operation soapAction="http://tempuri.org/UpdateDpto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiFunc">
+      <soap:operation soapAction="http://tempuri.org/ExcluiFunc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFunc">
+      <soap:operation soapAction="http://tempuri.org/UpdateFunc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiProjeto">
+      <soap:operation soapAction="http://tempuri.org/ExcluiProjeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjeto">
+      <soap:operation soapAction="http://tempuri.org/UpdateProjeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjetoIc">
+      <soap:operation soapAction="http://tempuri.org/UpdateProjetoIc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuncProjeto">
+      <soap:operation soapAction="http://tempuri.org/UpdateFuncProjeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiFuncProjeto">
+      <soap:operation soapAction="http://tempuri.org/ExcluiFuncProjeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Departamento">
+      <soap:operation soapAction="http://tempuri.org/Departamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Dependente">
+      <soap:operation soapAction="http://tempuri.org/Dependente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Funcionario">
+      <soap:operation soapAction="http://tempuri.org/Funcionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoAndamento">
+      <soap:operation soapAction="http://tempuri.org/ProjetoAndamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoConcluido">
+      <soap:operation soapAction="http://tempuri.org/ProjetoConcluido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Projeto">
+      <soap:operation soapAction="http://tempuri.org/Projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoAssociadoFunc">
+      <soap:operation soapAction="http://tempuri.org/ProjetoAssociadoFunc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoNaoAssociadoFunc">
+      <soap:operation soapAction="http://tempuri.org/ProjetoNaoAssociadoFunc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDepart">
+      <soap12:operation soapAction="http://tempuri.org/InsertDepart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertDependente">
+      <soap12:operation soapAction="http://tempuri.org/InsertDependente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFunc">
+      <soap12:operation soapAction="http://tempuri.org/InsertFunc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertProj">
+      <soap12:operation soapAction="http://tempuri.org/InsertProj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertFuncProj">
+      <soap12:operation soapAction="http://tempuri.org/InsertFuncProj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiDependente">
+      <soap12:operation soapAction="http://tempuri.org/ExcluiDependente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDependente">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDependente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiDpto">
+      <soap12:operation soapAction="http://tempuri.org/ExcluiDpto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDpto">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDpto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiFunc">
+      <soap12:operation soapAction="http://tempuri.org/ExcluiFunc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFunc">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFunc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiProjeto">
+      <soap12:operation soapAction="http://tempuri.org/ExcluiProjeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjeto">
+      <soap12:operation soapAction="http://tempuri.org/UpdateProjeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProjetoIc">
+      <soap12:operation soapAction="http://tempuri.org/UpdateProjetoIc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFuncProjeto">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFuncProjeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExcluiFuncProjeto">
+      <soap12:operation soapAction="http://tempuri.org/ExcluiFuncProjeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Departamento">
+      <soap12:operation soapAction="http://tempuri.org/Departamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Dependente">
+      <soap12:operation soapAction="http://tempuri.org/Dependente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Funcionario">
+      <soap12:operation soapAction="http://tempuri.org/Funcionario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoAndamento">
+      <soap12:operation soapAction="http://tempuri.org/ProjetoAndamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoConcluido">
+      <soap12:operation soapAction="http://tempuri.org/ProjetoConcluido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Projeto">
+      <soap12:operation soapAction="http://tempuri.org/Projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoAssociadoFunc">
+      <soap12:operation soapAction="http://tempuri.org/ProjetoAssociadoFunc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjetoNaoAssociadoFunc">
+      <soap12:operation soapAction="http://tempuri.org/ProjetoNaoAssociadoFunc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost:3664/WebProcedures.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost:3664/WebProcedures.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

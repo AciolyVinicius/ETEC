@@ -1,0 +1,19 @@
+Cursor é um recurso bastante interessante em banco de dados pois permite que seus códigos SQL façam uma varredura
+de uma tabela ou consulta linha-por-linha, realizando mais de uma operação se for o caso.
+
+Na maioria das vezes, um simples SELECT exibe na tela essa varredura, trazendo todos os registros de consulta em
+questão. A vantagem de usar um cursor é quando, além da exibição dos dados, queremos realizar algumas operações
+sobre os registros. Se o volume de operações for grande, fica muito mais fácil, limpo e prático escrever o código
+utilizando cursor, do que uma consulta SQL.
+
+Por exemplo: É muito mais vantajoso criar um cursor que faça a análise de cada produto do estoque, conferindo seu
+histórico, calculando sua previsão de vendas para o próximo mês, capturando o melhor cliente que já o comprou,
+etc, do que criar um select absurdamente grande que talvez não consiga ainda todas as informações de forma simples
+
+Pata utilizar um cursor, analise o código-fonte a seguir, onde são mostrados e comentados passo-a-passo a criação
+de um cursor e sua chamada. O objetivo do cursor apresentado a seguir é de somar a quilometragem atual de todos os
+veiculos de um banco de dados ficticio
+
+CEIL e CEILING: a função CEIL é uma forma compacta da CEILING, logo ambas têm o mesmo funcionamento, retornando o 
+menor valor inteiro que seja maior que o argumento informado. Por exemplo, o menor valor inteiro e mais próximo
+de 1,54 é o 2. Enquanto que o para o valor -2,3, o resultado seria -2, pois -2 é maior que -2,3 

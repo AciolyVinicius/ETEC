@@ -1,0 +1,21 @@
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.exe.config
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.exe
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.pdb
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.csprojResolveAssemblyReference.cache
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.FrmLogin.resources
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.Properties.Resources.resources
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.csproj.GenerateResource.Cache
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.exe
+J:\Técnico\3º Semestre\DS II\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.pdb
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.exe.config
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.exe
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.pdb
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.exe
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.pdb
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.csprojResolveAssemblyReference.cache
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.FrmLogin.resources
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.Properties.Resources.resources
+L:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.csproj.GenerateResource.Cache
+J:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\bin\Debug\ProjetoAzulMarinho.exe.config
+J:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.exe
+J:\V\Acioly\3ºModulo\DS_II\Aula06\ProjetoAzulMarinho\ProjetoAzulMarinho\obj\Debug\ProjetoAzulMarinho.pdb

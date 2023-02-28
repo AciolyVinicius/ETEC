@@ -1,0 +1,8 @@
+UPDATE
+
+
+update nome_da_tabela 
+	set atributo_que_vou_alterar = valor_que_eu_vou_atribuir		-- atribuindo
+		where atributo_para_alterar = valor_de_comparacao;
+		
+ 

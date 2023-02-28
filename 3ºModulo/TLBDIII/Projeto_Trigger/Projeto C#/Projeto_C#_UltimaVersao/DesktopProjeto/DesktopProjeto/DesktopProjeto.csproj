@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44A5671B-A135-4E75-BA7F-5F94A234C9E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesktopProjeto</RootNamespace>
+    <AssemblyName>DesktopProjeto</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\viníciusaciolyelias\Desktop\Programas\MySQL_Connector\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>..\..\..\..\..\..\2º Módulo\DS_I\MySQL_Connector\v4.0\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\..\..\..\..\..\2º Módulo\DS_I\MySQL_Connector\v4.0\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\..\..\..\..\2º Módulo\DS_I\MySQL_Connector\v4.0\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddDepartamento.Designer.cs">
+      <DependentUpon>FrmAddDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddDependente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddDependente.Designer.cs">
+      <DependentUpon>FrmAddDependente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddFuncionario.Designer.cs">
+      <DependentUpon>FrmAddFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProjeto.Designer.cs">
+      <DependentUpon>FrmAddProjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartamentos.Designer.cs">
+      <DependentUpon>FrmDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDependentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDependentes.Designer.cs">
+      <DependentUpon>FrmDependentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditDepartamento.Designer.cs">
+      <DependentUpon>FrmEditDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditDependente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditDependente.Designer.cs">
+      <DependentUpon>FrmEditDependente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditFuncionario.Designer.cs">
+      <DependentUpon>FrmEditFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditProjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditProjeto.Designer.cs">
+      <DependentUpon>FrmEditProjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddFuncionarioProjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddFuncionarioProjeto.Designer.cs">
+      <DependentUpon>FrmAddFuncionarioProjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionarios.Designer.cs">
+      <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProjetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjetos.Designer.cs">
+      <DependentUpon>FrmProjetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowDepartamento.Designer.cs">
+      <DependentUpon>FrmShowDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowDependente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowDependente.Designer.cs">
+      <DependentUpon>FrmShowDependente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowFuncionario.Designer.cs">
+      <DependentUpon>FrmShowFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowProjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowProjeto.Designer.cs">
+      <DependentUpon>FrmShowProjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WebProjeto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAddDepartamento.resx">
+      <DependentUpon>FrmAddDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddDependente.resx">
+      <DependentUpon>FrmAddDependente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddFuncionario.resx">
+      <DependentUpon>FrmAddFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProjeto.resx">
+      <DependentUpon>FrmAddProjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartamentos.resx">
+      <DependentUpon>FrmDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDependentes.resx">
+      <DependentUpon>FrmDependentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditDepartamento.resx">
+      <DependentUpon>FrmEditDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditDependente.resx">
+      <DependentUpon>FrmEditDependente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditFuncionario.resx">
+      <DependentUpon>FrmEditFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditProjeto.resx">
+      <DependentUpon>FrmEditProjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddFuncionarioProjeto.resx">
+      <DependentUpon>FrmAddFuncionarioProjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionarios.resx">
+      <DependentUpon>FrmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjetos.resx">
+      <DependentUpon>FrmProjetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowDepartamento.resx">
+      <DependentUpon>FrmShowDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowDependente.resx">
+      <DependentUpon>FrmShowDependente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowFuncionario.resx">
+      <DependentUpon>FrmShowFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowProjeto.resx">
+      <DependentUpon>FrmShowProjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\WebProjeto\WebProcedures.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WebProjeto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WebProjeto\WebProcedures.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WebProjeto\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WebProjeto\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WebProjeto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

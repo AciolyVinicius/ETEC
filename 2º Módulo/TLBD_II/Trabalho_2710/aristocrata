@@ -1,0 +1,238 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.5.25
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema aristocrata
+--
+
+CREATE DATABASE IF NOT EXISTS aristocrata;
+USE aristocrata;
+
+--
+-- Definition of table `tb_adm`
+--
+
+DROP TABLE IF EXISTS `tb_adm`;
+CREATE TABLE `tb_adm` (
+  `cd_adm` int(11) NOT NULL AUTO_INCREMENT,
+  `nm_adm` varchar(100) NOT NULL,
+  `cd_email` varchar(100) NOT NULL,
+  `cd_senha` varchar(100) NOT NULL,
+  PRIMARY KEY (`cd_adm`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_adm`
+--
+
+/*!40000 ALTER TABLE `tb_adm` DISABLE KEYS */;
+INSERT INTO `tb_adm` (`cd_adm`,`nm_adm`,`cd_email`,`cd_senha`) VALUES 
+ (1,'bernardo tavares','bertv@test.com','brnrd321'),
+ (2,'felipe bastos','felbs@test.com','flp321'),
+ (3,'bruno silva','brnsl@test.com','brn321'),
+ (4,'vinicius acioly','vncac@test.com','vncs321'),
+ (5,'heitor henrique','htrhn@test.com','htr321'),
+ (6,'Administrador','admin@email.com','admin123');
+/*!40000 ALTER TABLE `tb_adm` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tb_manutencao`
+--
+
+DROP TABLE IF EXISTS `tb_manutencao`;
+CREATE TABLE `tb_manutencao` (
+  `cd_titulo` int(11) DEFAULT NULL,
+  `cd_mes` int(6) DEFAULT NULL,
+  `ic_pagamento` tinyint(1) DEFAULT NULL,
+  `cd_ano` year(4) DEFAULT NULL,
+  KEY `fk_manutencao_titulo_idx` (`cd_titulo`),
+  CONSTRAINT `fk_manutencao_titulo` FOREIGN KEY (`cd_titulo`) REFERENCES `tb_titulo` (`cd_titulo`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_manutencao`
+--
+
+/*!40000 ALTER TABLE `tb_manutencao` DISABLE KEYS */;
+INSERT INTO `tb_manutencao` (`cd_titulo`,`cd_mes`,`ic_pagamento`,`cd_ano`) VALUES 
+ (NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `tb_manutencao` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tb_parcela_joia`
+--
+
+DROP TABLE IF EXISTS `tb_parcela_joia`;
+CREATE TABLE `tb_parcela_joia` (
+  `cd_titulo` int(11) DEFAULT NULL,
+  `cd_parcela_mes` int(6) DEFAULT NULL COMMENT 'cd_parcela irá definir qual o mes da parcela\n',
+  `ic_pagamento` tinyint(1) DEFAULT NULL,
+  `cd_parcela_ano` year(4) DEFAULT NULL,
+  KEY `fk_mensalidade_titulo` (`cd_titulo`),
+  CONSTRAINT `fk_mensalidade_titulo` FOREIGN KEY (`cd_titulo`) REFERENCES `tb_titulo` (`cd_titulo`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_parcela_joia`
+--
+
+/*!40000 ALTER TABLE `tb_parcela_joia` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_parcela_joia` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tb_socio`
+--
+
+DROP TABLE IF EXISTS `tb_socio`;
+CREATE TABLE `tb_socio` (
+  `cd_socio` int(11) NOT NULL AUTO_INCREMENT,
+  `cd_tipo_socio` int(11) DEFAULT NULL,
+  `nm_socio` varchar(100) DEFAULT NULL,
+  `nm_sobrenome` varchar(100) DEFAULT NULL,
+  `dt_nascimento` date NOT NULL,
+  `cd_email` varchar(100) NOT NULL,
+  `cd_contato` varchar(20) NOT NULL,
+  `cd_cpf` varchar(20) NOT NULL,
+  `ds_endereco` varchar(150) NOT NULL,
+  `ds_cidade` varchar(100) NOT NULL,
+  `sg_uf` varchar(2) NOT NULL,
+  PRIMARY KEY (`cd_socio`),
+  KEY `fk_tipo_socio_socio_idx` (`cd_tipo_socio`),
+  CONSTRAINT `fk_socio_tipo_socio` FOREIGN KEY (`cd_tipo_socio`) REFERENCES `tb_tipo_socio` (`cd_tipo_socio`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_socio`
+--
+
+/*!40000 ALTER TABLE `tb_socio` DISABLE KEYS */;
+INSERT INTO `tb_socio` (`cd_socio`,`cd_tipo_socio`,`nm_socio`,`nm_sobrenome`,`dt_nascimento`,`cd_email`,`cd_contato`,`cd_cpf`,`ds_endereco`,`ds_cidade`,`sg_uf`) VALUES 
+ (1,1,'michel','linhares','1990-01-01','michel.linhares@gmail.com','(13)91234-1234','123.456.789-11','R. Pelicanos, 39','São Vicente','SP'),
+ (2,2,'lucas','silva','1993-01-02','lucas.silva@gmail.com','(13)91234-1234','123.456.789-11','R. Piraporinha, 119','São Vicente','SP'),
+ (3,2,'gabriel','francisco','1999-11-11','gabriel.francisco@gmail.com','(13)91234-1234','123.456.789-11','R. Jua, 09','São Vicente','SP'),
+ (4,1,'laura','queiroz','1990-12-01','laura.queiroz@gmail.com','(13)91234-1234','123.456.789-11','R. Pelicanos, 29','São Vicente','SP'),
+ (5,1,'laura','queiroz','1990-12-01','laura.queiroz@gmail.com','(13)91234-1234','123.456.789-11','R. Pelicanos, 29','São Vicente','SP'),
+ (6,1,'laura','queiroz','1990-12-01','laura.queiroz@gmail.com','(13)91234-1234','123.456.789-11','R. Pelicanos, 29','São Vicente','SP'),
+ (7,2,'laura','queiroz','1990-12-01','laura.queiroz@gmail.com','(13)91234-1234','123.456.789-11','R. Pelicanos, 29','São Vicente','SP'),
+ (8,2,'laura','queiroz','1990-12-01','laura.queiroz@gmail.com','(13)91234-1234','123.456.789-11','R. Pelicanos, 29','São Vicente','SP');
+/*!40000 ALTER TABLE `tb_socio` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tb_tipo_socio`
+--
+
+DROP TABLE IF EXISTS `tb_tipo_socio`;
+CREATE TABLE `tb_tipo_socio` (
+  `cd_tipo_socio` int(11) NOT NULL AUTO_INCREMENT,
+  `ds_tipo_socio` text COMMENT 'Se é titular ou dependente\n',
+  PRIMARY KEY (`cd_tipo_socio`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_tipo_socio`
+--
+
+/*!40000 ALTER TABLE `tb_tipo_socio` DISABLE KEYS */;
+INSERT INTO `tb_tipo_socio` (`cd_tipo_socio`,`ds_tipo_socio`) VALUES 
+ (1,'titulares'),
+ (2,'dependentes');
+/*!40000 ALTER TABLE `tb_tipo_socio` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tb_titulo`
+--
+
+DROP TABLE IF EXISTS `tb_titulo`;
+CREATE TABLE `tb_titulo` (
+  `cd_titulo` int(11) NOT NULL AUTO_INCREMENT,
+  `cd_socio` int(11) DEFAULT NULL,
+  `cd_vendedor` int(11) DEFAULT NULL,
+  `dt_venda` date NOT NULL,
+  `nm_titulo` varchar(100) NOT NULL,
+  `vl_comissao` decimal(9,2) DEFAULT NULL,
+  `qt_parcelamento` int(4) DEFAULT NULL,
+  `vl_parcela` decimal(9,2) DEFAULT NULL,
+  `vl_joia_avista` decimal(9,2) DEFAULT NULL,
+  `vl_manutencao` decimal(9,2) DEFAULT NULL,
+  PRIMARY KEY (`cd_titulo`),
+  KEY `fk_titulo_socio_idx` (`cd_socio`),
+  KEY `fk_titulo_vendedor_idx` (`cd_vendedor`),
+  CONSTRAINT `fk_titulo_socio` FOREIGN KEY (`cd_socio`) REFERENCES `tb_socio` (`cd_socio`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_titulo_vendedor` FOREIGN KEY (`cd_vendedor`) REFERENCES `tb_vendedor` (`cd_vendedor`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_titulo`
+--
+
+/*!40000 ALTER TABLE `tb_titulo` DISABLE KEYS */;
+INSERT INTO `tb_titulo` (`cd_titulo`,`cd_socio`,`cd_vendedor`,`dt_venda`,`nm_titulo`,`vl_comissao`,`qt_parcelamento`,`vl_parcela`,`vl_joia_avista`,`vl_manutencao`) VALUES 
+ (1,8,1,'2017-11-15','Bronze','2000.00',2,'10000.00','17000.00','900.00'),
+ (2,7,2,'2017-11-17','Prata','100.00',1,'1000.00','850.00','350.00'),
+ (3,6,3,'2017-07-30','Ouro','500.00',5,'500.00','2500.00','300.00'),
+ (4,5,4,'2017-10-28','Planatina','600.00',3,'2000.00','5500.00','500.00'),
+ (5,4,5,'2017-04-14','Diamante','700.00',4,'1750.00','5900.00','550.00'),
+ (6,3,6,'2017-11-15','Mestre','1000.00',1,'10000.00','9000.00','850.00'),
+ (7,2,10,'2017-11-07','Desafiante','100.00',1,'1000.00','850.00','350.00'),
+ (8,1,5,'2017-07-12','Profissional','500.00',5,'500.00','2500.00','300.00');
+/*!40000 ALTER TABLE `tb_titulo` ENABLE KEYS */;
+
+
+--
+-- Definition of table `tb_vendedor`
+--
+
+DROP TABLE IF EXISTS `tb_vendedor`;
+CREATE TABLE `tb_vendedor` (
+  `cd_vendedor` int(11) NOT NULL AUTO_INCREMENT,
+  `nm_vendedor` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`cd_vendedor`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_vendedor`
+--
+
+/*!40000 ALTER TABLE `tb_vendedor` DISABLE KEYS */;
+INSERT INTO `tb_vendedor` (`cd_vendedor`,`nm_vendedor`) VALUES 
+ (1,'matheus Souza'),
+ (2,'ana Lara'),
+ (3,'guilherme Moraes'),
+ (4,'adriano Silva'),
+ (5,'pedro Rocha'),
+ (6,'giovanna Dantas'),
+ (7,'rafael Denis'),
+ (8,'daniel Vicentino'),
+ (9,'daniela Lins'),
+ (10,'michel Linares'),
+ (11,'Rafael M');
+/*!40000 ALTER TABLE `tb_vendedor` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

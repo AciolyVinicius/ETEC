@@ -1,0 +1,12 @@
+C:\Users\Aluno\Desktop\Separador\Separador\bin\Debug\Separador.exe.config
+C:\Users\Aluno\Desktop\Separador\Separador\bin\Debug\Separador.exe
+C:\Users\Aluno\Desktop\Separador\Separador\bin\Debug\Separador.pdb
+C:\Users\Aluno\Desktop\Separador\Separador\obj\Debug\Separador.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Separador\Separador\obj\Debug\Separador.Frm_separador.resources
+C:\Users\Aluno\Desktop\Separador\Separador\obj\Debug\Separador.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Separador\Separador\obj\Debug\Separador.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Separador\Separador\obj\Debug\Separador.exe
+C:\Users\Aluno\Desktop\Separador\Separador\obj\Debug\Separador.pdb
+J:\V\Acioly\3ºModulo\DS_II\Separador\Separador\bin\Debug\Separador.exe.config
+J:\V\Acioly\3ºModulo\DS_II\Separador\Separador\obj\Debug\Separador.exe
+J:\V\Acioly\3ºModulo\DS_II\Separador\Separador\obj\Debug\Separador.pdb

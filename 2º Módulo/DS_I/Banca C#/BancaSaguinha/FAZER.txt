@@ -1,0 +1,3 @@
+Fazer uma area para lancar notas
+Fazer uma turma/ano (trabalhar como se fosse ensino medio)
+Fazer uma area para lancar avisos para a turma

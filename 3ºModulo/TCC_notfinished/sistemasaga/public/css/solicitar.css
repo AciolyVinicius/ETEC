@@ -1,0 +1,15 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+#conteudo{
+  margin-bottom: 58px; 
+}
+.footer.segment {
+      padding: 3em 0em;
+  }
+#logo{
+  padding: 15%;
+  padding-top: 19%;
+  width: 720px;
+}

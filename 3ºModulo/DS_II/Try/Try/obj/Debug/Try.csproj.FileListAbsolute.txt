@@ -1,0 +1,9 @@
+C:\Users\Aluno\Desktop\Try\Try\bin\Debug\Try.exe.config
+C:\Users\Aluno\Desktop\Try\Try\bin\Debug\Try.exe
+C:\Users\Aluno\Desktop\Try\Try\bin\Debug\Try.pdb
+C:\Users\Aluno\Desktop\Try\Try\obj\Debug\Try.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Try\Try\obj\Debug\Try.Erro.resources
+C:\Users\Aluno\Desktop\Try\Try\obj\Debug\Try.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Try\Try\obj\Debug\Try.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Try\Try\obj\Debug\Try.exe
+C:\Users\Aluno\Desktop\Try\Try\obj\Debug\Try.pdb

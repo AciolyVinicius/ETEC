@@ -1,0 +1,12 @@
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\bin\Debug\Aula09-RegistroDoWindows.exe.config
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\bin\Debug\Aula09-RegistroDoWindows.exe
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\bin\Debug\Aula09-RegistroDoWindows.pdb
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\obj\Debug\Aula09-RegistroDoWindows.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\obj\Debug\Aula09_RegistroDoWindows.Frm_Registro.resources
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\obj\Debug\Aula09_RegistroDoWindows.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\obj\Debug\Aula09-RegistroDoWindows.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\obj\Debug\Aula09-RegistroDoWindows.exe
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows\Aula09-RegistroDoWindows\obj\Debug\Aula09-RegistroDoWindows.pdb
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows-UsuarioSenha\Aula09-RegistroDoWindows\bin\Debug\Aula09-RegistroDoWindows.exe.config
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows-UsuarioSenha\Aula09-RegistroDoWindows\obj\Debug\Aula09-RegistroDoWindows.exe
+C:\Users\Aluno\Desktop\Aula09-RegistroDoWindows-UsuarioSenha\Aula09-RegistroDoWindows\obj\Debug\Aula09-RegistroDoWindows.pdb

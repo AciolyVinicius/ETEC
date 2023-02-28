@@ -1,0 +1,10 @@
+Métodos GET e POST
+
+Existem 2 métodos como as informações podem ser passadas: GET e POST. O 
+recomendável sempre, para todos os formulários, é usar o POST, onde os dados
+enviados não são nas URLs, ocultando possíveis importantes informações
+e permitindo o envio de longas informações. O GET é totalmente o contrário disso
+
+	VER MÉTODOS GET
+	VER MÉTODOS POST
+	Mais itens...

@@ -1,0 +1,45 @@
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\bin\Debug\GetSet.exe
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\bin\Debug\GetSet.pdb
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\obj\x86\Debug\GetSet.Form1.resources
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\obj\x86\Debug\GetSet.Form2.resources
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\obj\x86\Debug\GetSet.Properties.Resources.resources
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\obj\x86\Debug\GetSet.csproj.GenerateResource.Cache
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Rovati\Desktop\ETEC- Técnico (Módulo III)\DSW II\GetSet\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Aluno\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Aluno\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\bin\Debug\GetSet.exe
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\bin\Debug\GetSet.pdb
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.Form1.resources
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.Form2.resources
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.Properties.Resources.resources
+C:\Users\Windows Seven\Desktop\GetSet\GetSet\obj\x86\Debug\GetSet.csproj.GenerateResource.Cache
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\obj\x86\Debug\GetSet.Form1.resources
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\obj\x86\Debug\GetSet.Form2.resources
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\obj\x86\Debug\GetSet.Properties.Resources.resources
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\obj\x86\Debug\GetSet.csproj.GenerateResource.Cache
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\bin\Debug\GetSet.exe
+C:\Users\Windows Seven\Desktop\GetSet - Copia\GetSet\bin\Debug\GetSet.pdb
+C:\Users\Windows Seven\Desktop\GetSet - Array\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Windows Seven\Desktop\GetSet - Array\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Aluno\Desktop\GetSet - Array\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Aluno\Desktop\GetSet - Array\GetSet\obj\x86\Debug\GetSet.pdb
+K:\GetSet - Array\GetSet\obj\x86\Debug\GetSet.exe
+K:\GetSet - Array\GetSet\obj\x86\Debug\GetSet.pdb
+D:\GetSet - Array\GetSet\obj\x86\Debug\GetSet.exe
+D:\GetSet - Array\GetSet\obj\x86\Debug\GetSet.pdb
+H:\GetSet - Array\GetSet\obj\x86\Debug\GetSet.exe
+H:\GetSet - Array\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.exe
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.pdb
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\bin\Debug\GetSet.exe
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\bin\Debug\GetSet.pdb
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.Form1.resources
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.Form2.resources
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula12-GetSet - Array\GetSet\obj\x86\Debug\GetSet.csproj.GenerateResource.Cache

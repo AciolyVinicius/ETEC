@@ -1,0 +1,10 @@
+c:\users\aluno\documents\visual studio 2015\Projects\Imagem_Banco\Imagem_Banco\bin\Debug\Imagem_Banco.exe.config
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\bin\Debug\Imagem_Banco.exe.config
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\bin\Debug\Imagem_Banco.exe
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\bin\Debug\Imagem_Banco.pdb
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\obj\Debug\Imagem_Banco.csprojResolveAssemblyReference.cache
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\obj\Debug\Imagem_Banco.Form1.resources
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\obj\Debug\Imagem_Banco.Properties.Resources.resources
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\obj\Debug\Imagem_Banco.csproj.GenerateResource.Cache
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\obj\Debug\Imagem_Banco.exe
+J:\V\Acioly\3ºModulo\DS_II\Imagem_Banco\Imagem_Banco\obj\Debug\Imagem_Banco.pdb

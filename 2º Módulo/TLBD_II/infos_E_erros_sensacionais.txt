@@ -1,0 +1,9 @@
+create --CRIA--
+drop --DELETA--
+alter --ALTERA-- (add--ADICIONA--, changer *ou modify--MODIFICA--, drop--DELETA--)
+
+ERROS SENSACIONAIS:
+120
+121
+122
+150

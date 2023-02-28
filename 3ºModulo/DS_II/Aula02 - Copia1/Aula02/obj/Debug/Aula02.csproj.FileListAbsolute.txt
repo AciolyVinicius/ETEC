@@ -1,0 +1,31 @@
+C:\Users\Aluno\Desktop\Aula02\Aula02\bin\Debug\Aula02.exe.config
+C:\Users\Aluno\Desktop\Aula02\Aula02\bin\Debug\Aula02.exe
+C:\Users\Aluno\Desktop\Aula02\Aula02\bin\Debug\Aula02.pdb
+C:\Users\Aluno\Desktop\Aula02\Aula02\obj\Debug\Aula02.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula02\Aula02\obj\Debug\Aula02.Frm_login.resources
+C:\Users\Aluno\Desktop\Aula02\Aula02\obj\Debug\Aula02.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula02\Aula02\obj\Debug\Aula02.csproj.GenerateResource.Cache
+C:\Users\Aluno\Desktop\Aula02\Aula02\obj\Debug\Aula02.exe
+C:\Users\Aluno\Desktop\Aula02\Aula02\obj\Debug\Aula02.pdb
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\bin\Debug\Aula02.exe.config
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.exe
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.pdb
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.csprojResolveAssemblyReference.cache
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Frm_login.resources
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Properties.Resources.resources
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.csproj.GenerateResource.Cache
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\bin\Debug\Aula02.exe
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\bin\Debug\Aula02.pdb
+K:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Frm_insert.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\bin\Debug\Aula02.exe.config
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.exe
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.pdb
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\bin\Debug\Aula02.exe
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\bin\Debug\Aula02.pdb
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.csprojResolveAssemblyReference.cache
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Frm_insert.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Frm_login.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Properties.Resources.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.csproj.GenerateResource.Cache
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Frm_del.resources
+J:\V\Acioly\3ºModulo\DS_II\Aula02 - Copia1\Aula02\obj\Debug\Aula02.Frm_full.resources

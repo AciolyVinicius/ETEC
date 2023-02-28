@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LISTA4_EXE3_MGVM_VAES", "LISTA4_EXE3_MGVM_VAES\LISTA4_EXE3_MGVM_VAES.csproj", "{FC5268A2-333E-4BF4-BAD4-3F0990DFC6DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC5268A2-333E-4BF4-BAD4-3F0990DFC6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5268A2-333E-4BF4-BAD4-3F0990DFC6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5268A2-333E-4BF4-BAD4-3F0990DFC6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5268A2-333E-4BF4-BAD4-3F0990DFC6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

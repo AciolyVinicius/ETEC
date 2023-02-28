@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Acervo" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5a8be204-dd18-4686-b530-f32d63cec4bb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_acervo.`cd_acervo` AS tb_acervo_cd_acervo,
+     tb_acervo.`nm_titulo` AS tb_acervo_nm_titulo,
+     tb_acervo.`nm_edicao` AS tb_acervo_nm_edicao,
+     tb_acervo.`nm_autor` AS tb_acervo_nm_autor,
+     tb_acervo.`nm_editora` AS tb_acervo_nm_editora,
+     tb_acervo.`ic_ativo` AS tb_acervo_ic_ativo,
+     tb_tipo_material.`nm_tipo` AS tb_tipo_material_nm_tipo,
+     tb_categoria.`nm_categoria` AS tb_categoria_nm_categoria
+FROM
+     `tb_tipo_material` tb_tipo_material INNER JOIN `tb_acervo` tb_acervo ON tb_tipo_material.`cd_material` = tb_acervo.`cd_material`
+     INNER JOIN `tb_categoria` tb_categoria ON tb_acervo.`cd_categoria` = tb_categoria.`cd_categoria`]]>
+	</queryString>
+	<field name="tb_acervo_cd_acervo" class="java.lang.Integer"/>
+	<field name="tb_acervo_nm_titulo" class="java.lang.String"/>
+	<field name="tb_acervo_nm_edicao" class="java.lang.String"/>
+	<field name="tb_acervo_nm_autor" class="java.lang.String"/>
+	<field name="tb_acervo_nm_editora" class="java.lang.String"/>
+	<field name="tb_acervo_ic_ativo" class="java.lang.Boolean"/>
+	<field name="tb_tipo_material_nm_tipo" class="java.lang.String"/>
+	<field name="tb_categoria_nm_categoria" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="6326d37a-912e-4f2a-93fa-7bf7c25008c8"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="9c41aba9-4eee-4e3d-99a4-47c7ad0a65ca"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[ACERVO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="100" y="46" width="174" height="22" uuid="d24d2fe1-4d00-49c4-9fd8-37a13985c3dc"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="fcae8c05-4f82-4e64-afe3-bf969c050f34"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="52" height="15" uuid="4f1dbada-6397-49f7-9640-90543381908d"/>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="52" y="19" width="141" height="15" uuid="b663bc87-21ae-4a04-ae83-a788350632c9"/>
+				<text><![CDATA[Título]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="193" y="19" width="47" height="15" uuid="4b226440-9269-4e86-9db1-4242c1694df7"/>
+				<text><![CDATA[Edição]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="240" y="19" width="79" height="15" uuid="be255418-bcd3-48a3-818c-3266785754f9"/>
+				<text><![CDATA[Autor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="319" y="19" width="62" height="15" uuid="b23e49d0-b8c5-4cd5-8f6e-c024b53a4fc0"/>
+				<text><![CDATA[Editora]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="382" y="20" width="32" height="15" uuid="546d7366-46ca-4dfc-9180-be6cea6760c0"/>
+				<text><![CDATA[Ativo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="414" y="19" width="69" height="15" uuid="1cba3b61-32c9-4f25-baa3-20a7a50e5b72"/>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="483" y="19" width="69" height="15" uuid="c8632c8a-7b7d-437c-b4bd-fa27f4209e0d"/>
+				<text><![CDATA[Categoria]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="b286e8c8-01c9-4ac0-a55f-49bf9a6a73a2"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="52" height="15" uuid="9cdd8056-6701-46c6-bb00-94e014c1b2d4"/>
+				<textFieldExpression><![CDATA[$F{tb_acervo_cd_acervo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="52" y="0" width="141" height="15" uuid="cc41d76f-8efc-42eb-ac27-4f64b6bd48bf"/>
+				<textFieldExpression><![CDATA[$F{tb_acervo_nm_titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="193" y="0" width="47" height="15" uuid="8c1a1d8a-0bef-48e2-84b0-33cf94b0cb6f"/>
+				<textFieldExpression><![CDATA[$F{tb_acervo_nm_edicao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="240" y="0" width="79" height="15" uuid="8499dbfc-0f53-4184-bdd4-ba726c9306c9"/>
+				<textFieldExpression><![CDATA[$F{tb_acervo_nm_autor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="319" y="0" width="62" height="15" uuid="97f00289-5545-4679-882e-819b3bd02528"/>
+				<textFieldExpression><![CDATA[$F{tb_acervo_nm_editora}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="382" y="1" width="32" height="15" uuid="a285b764-fdf8-4d40-96e9-428357c253eb"/>
+				<textFieldExpression><![CDATA[$F{tb_acervo_ic_ativo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="414" y="0" width="69" height="15" uuid="566a446b-c2d3-44d1-a5f4-aebdd7387cbb"/>
+				<textFieldExpression><![CDATA[$F{tb_tipo_material_nm_tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="483" y="0" width="69" height="15" uuid="bca84e8f-66c0-45ad-8679-9226b199d648"/>
+				<textFieldExpression><![CDATA[$F{tb_categoria_nm_categoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="4a07da69-4a8f-4b82-9083-c74450ad61bb"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="81d0cdf8-4f4f-44aa-8b42-332d863a1468"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="95fa01cd-a193-4987-ba29-c9c60f65babd"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="85e53a5c-32f8-4910-86c3-8d88f85c42c3"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

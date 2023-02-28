@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="func">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id2" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id3" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="funcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="funcResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="func_funcionarios_p">
+        <s:complexType />
+      </s:element>
+      <s:element name="func_funcionarios_pResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_funcionarios_pResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_funcionarios_f">
+        <s:complexType />
+      </s:element>
+      <s:element name="func_funcionarios_fResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_funcionarios_fResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="departamentos">
+        <s:complexType />
+      </s:element>
+      <s:element name="departamentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="departamentosResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_salario_maior_menor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="maior" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="menor" type="s:float" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_salario_maior_menorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_salario_maior_menorResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_dependente">
+        <s:complexType />
+      </s:element>
+      <s:element name="func_dependenteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_dependenteResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_cidade_inicial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="inicial" type="s1:char" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_cidade_inicialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_cidade_inicialResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_proj_verb_indefinida_xbolsas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bolsas" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_proj_verb_indefinida_xbolsasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_proj_verb_indefinida_xbolsasResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_proj_verb_indefinida_xtipo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_proj_verb_indefinida_xtipoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_proj_verb_indefinida_xtipoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_dependente_nao_filhoa">
+        <s:complexType />
+      </s:element>
+      <s:element name="func_dependente_nao_filhoaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_dependente_nao_filhoaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="func_depart_gerenciam_em_projeto">
+        <s:complexType />
+      </s:element>
+      <s:element name="func_depart_gerenciam_em_projetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="func_depart_gerenciam_em_projetoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="select_projeto">
+        <s:complexType />
+      </s:element>
+      <s:element name="select_projetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="select_projetoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insert_projeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projeto" type="tns:ProjetoDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProjetoDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Verba" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CpfFuncionario" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Departamento" type="tns:DepartamentoDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepartamentoDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Localizacao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insert_projetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="insert_projetoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_projeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projeto" type="tns:ProjetoDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="update_projetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="update_projetoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delete_projeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="delete_projetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="delete_projetoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_projeto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="search_projetoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="search_projetoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="funcSoapIn">
+    <wsdl:part name="parameters" element="tns:func" />
+  </wsdl:message>
+  <wsdl:message name="funcSoapOut">
+    <wsdl:part name="parameters" element="tns:funcResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_funcionarios_pSoapIn">
+    <wsdl:part name="parameters" element="tns:func_funcionarios_p" />
+  </wsdl:message>
+  <wsdl:message name="func_funcionarios_pSoapOut">
+    <wsdl:part name="parameters" element="tns:func_funcionarios_pResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_funcionarios_fSoapIn">
+    <wsdl:part name="parameters" element="tns:func_funcionarios_f" />
+  </wsdl:message>
+  <wsdl:message name="func_funcionarios_fSoapOut">
+    <wsdl:part name="parameters" element="tns:func_funcionarios_fResponse" />
+  </wsdl:message>
+  <wsdl:message name="departamentosSoapIn">
+    <wsdl:part name="parameters" element="tns:departamentos" />
+  </wsdl:message>
+  <wsdl:message name="departamentosSoapOut">
+    <wsdl:part name="parameters" element="tns:departamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_salario_maior_menorSoapIn">
+    <wsdl:part name="parameters" element="tns:func_salario_maior_menor" />
+  </wsdl:message>
+  <wsdl:message name="func_salario_maior_menorSoapOut">
+    <wsdl:part name="parameters" element="tns:func_salario_maior_menorResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_dependenteSoapIn">
+    <wsdl:part name="parameters" element="tns:func_dependente" />
+  </wsdl:message>
+  <wsdl:message name="func_dependenteSoapOut">
+    <wsdl:part name="parameters" element="tns:func_dependenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_cidade_inicialSoapIn">
+    <wsdl:part name="parameters" element="tns:func_cidade_inicial" />
+  </wsdl:message>
+  <wsdl:message name="func_cidade_inicialSoapOut">
+    <wsdl:part name="parameters" element="tns:func_cidade_inicialResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_proj_verb_indefinida_xbolsasSoapIn">
+    <wsdl:part name="parameters" element="tns:func_proj_verb_indefinida_xbolsas" />
+  </wsdl:message>
+  <wsdl:message name="func_proj_verb_indefinida_xbolsasSoapOut">
+    <wsdl:part name="parameters" element="tns:func_proj_verb_indefinida_xbolsasResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_proj_verb_indefinida_xtipoSoapIn">
+    <wsdl:part name="parameters" element="tns:func_proj_verb_indefinida_xtipo" />
+  </wsdl:message>
+  <wsdl:message name="func_proj_verb_indefinida_xtipoSoapOut">
+    <wsdl:part name="parameters" element="tns:func_proj_verb_indefinida_xtipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_dependente_nao_filhoaSoapIn">
+    <wsdl:part name="parameters" element="tns:func_dependente_nao_filhoa" />
+  </wsdl:message>
+  <wsdl:message name="func_dependente_nao_filhoaSoapOut">
+    <wsdl:part name="parameters" element="tns:func_dependente_nao_filhoaResponse" />
+  </wsdl:message>
+  <wsdl:message name="func_depart_gerenciam_em_projetoSoapIn">
+    <wsdl:part name="parameters" element="tns:func_depart_gerenciam_em_projeto" />
+  </wsdl:message>
+  <wsdl:message name="func_depart_gerenciam_em_projetoSoapOut">
+    <wsdl:part name="parameters" element="tns:func_depart_gerenciam_em_projetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="select_projetoSoapIn">
+    <wsdl:part name="parameters" element="tns:select_projeto" />
+  </wsdl:message>
+  <wsdl:message name="select_projetoSoapOut">
+    <wsdl:part name="parameters" element="tns:select_projetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="insert_projetoSoapIn">
+    <wsdl:part name="parameters" element="tns:insert_projeto" />
+  </wsdl:message>
+  <wsdl:message name="insert_projetoSoapOut">
+    <wsdl:part name="parameters" element="tns:insert_projetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="update_projetoSoapIn">
+    <wsdl:part name="parameters" element="tns:update_projeto" />
+  </wsdl:message>
+  <wsdl:message name="update_projetoSoapOut">
+    <wsdl:part name="parameters" element="tns:update_projetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="delete_projetoSoapIn">
+    <wsdl:part name="parameters" element="tns:delete_projeto" />
+  </wsdl:message>
+  <wsdl:message name="delete_projetoSoapOut">
+    <wsdl:part name="parameters" element="tns:delete_projetoResponse" />
+  </wsdl:message>
+  <wsdl:message name="search_projetoSoapIn">
+    <wsdl:part name="parameters" element="tns:search_projeto" />
+  </wsdl:message>
+  <wsdl:message name="search_projetoSoapOut">
+    <wsdl:part name="parameters" element="tns:search_projetoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="func3Soap">
+    <wsdl:operation name="func">
+      <wsdl:input message="tns:funcSoapIn" />
+      <wsdl:output message="tns:funcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_funcionarios_p">
+      <wsdl:input message="tns:func_funcionarios_pSoapIn" />
+      <wsdl:output message="tns:func_funcionarios_pSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_funcionarios_f">
+      <wsdl:input message="tns:func_funcionarios_fSoapIn" />
+      <wsdl:output message="tns:func_funcionarios_fSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="departamentos">
+      <wsdl:input message="tns:departamentosSoapIn" />
+      <wsdl:output message="tns:departamentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_salario_maior_menor">
+      <wsdl:input message="tns:func_salario_maior_menorSoapIn" />
+      <wsdl:output message="tns:func_salario_maior_menorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_dependente">
+      <wsdl:input message="tns:func_dependenteSoapIn" />
+      <wsdl:output message="tns:func_dependenteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_cidade_inicial">
+      <wsdl:input message="tns:func_cidade_inicialSoapIn" />
+      <wsdl:output message="tns:func_cidade_inicialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_proj_verb_indefinida_xbolsas">
+      <wsdl:input message="tns:func_proj_verb_indefinida_xbolsasSoapIn" />
+      <wsdl:output message="tns:func_proj_verb_indefinida_xbolsasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_proj_verb_indefinida_xtipo">
+      <wsdl:input message="tns:func_proj_verb_indefinida_xtipoSoapIn" />
+      <wsdl:output message="tns:func_proj_verb_indefinida_xtipoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_dependente_nao_filhoa">
+      <wsdl:input message="tns:func_dependente_nao_filhoaSoapIn" />
+      <wsdl:output message="tns:func_dependente_nao_filhoaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="func_depart_gerenciam_em_projeto">
+      <wsdl:input message="tns:func_depart_gerenciam_em_projetoSoapIn" />
+      <wsdl:output message="tns:func_depart_gerenciam_em_projetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="select_projeto">
+      <wsdl:input message="tns:select_projetoSoapIn" />
+      <wsdl:output message="tns:select_projetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insert_projeto">
+      <wsdl:input message="tns:insert_projetoSoapIn" />
+      <wsdl:output message="tns:insert_projetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="update_projeto">
+      <wsdl:input message="tns:update_projetoSoapIn" />
+      <wsdl:output message="tns:update_projetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="delete_projeto">
+      <wsdl:input message="tns:delete_projetoSoapIn" />
+      <wsdl:output message="tns:delete_projetoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="search_projeto">
+      <wsdl:input message="tns:search_projetoSoapIn" />
+      <wsdl:output message="tns:search_projetoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="func3Soap" type="tns:func3Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="func">
+      <soap:operation soapAction="http://tempuri.org/func" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_funcionarios_p">
+      <soap:operation soapAction="http://tempuri.org/func_funcionarios_p" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_funcionarios_f">
+      <soap:operation soapAction="http://tempuri.org/func_funcionarios_f" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="departamentos">
+      <soap:operation soapAction="http://tempuri.org/departamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_salario_maior_menor">
+      <soap:operation soapAction="http://tempuri.org/func_salario_maior_menor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_dependente">
+      <soap:operation soapAction="http://tempuri.org/func_dependente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_cidade_inicial">
+      <soap:operation soapAction="http://tempuri.org/func_cidade_inicial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_proj_verb_indefinida_xbolsas">
+      <soap:operation soapAction="http://tempuri.org/func_proj_verb_indefinida_xbolsas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_proj_verb_indefinida_xtipo">
+      <soap:operation soapAction="http://tempuri.org/func_proj_verb_indefinida_xtipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_dependente_nao_filhoa">
+      <soap:operation soapAction="http://tempuri.org/func_dependente_nao_filhoa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_depart_gerenciam_em_projeto">
+      <soap:operation soapAction="http://tempuri.org/func_depart_gerenciam_em_projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="select_projeto">
+      <soap:operation soapAction="http://tempuri.org/select_projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_projeto">
+      <soap:operation soapAction="http://tempuri.org/insert_projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_projeto">
+      <soap:operation soapAction="http://tempuri.org/update_projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_projeto">
+      <soap:operation soapAction="http://tempuri.org/delete_projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_projeto">
+      <soap:operation soapAction="http://tempuri.org/search_projeto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="func3Soap12" type="tns:func3Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="func">
+      <soap12:operation soapAction="http://tempuri.org/func" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_funcionarios_p">
+      <soap12:operation soapAction="http://tempuri.org/func_funcionarios_p" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_funcionarios_f">
+      <soap12:operation soapAction="http://tempuri.org/func_funcionarios_f" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="departamentos">
+      <soap12:operation soapAction="http://tempuri.org/departamentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_salario_maior_menor">
+      <soap12:operation soapAction="http://tempuri.org/func_salario_maior_menor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_dependente">
+      <soap12:operation soapAction="http://tempuri.org/func_dependente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_cidade_inicial">
+      <soap12:operation soapAction="http://tempuri.org/func_cidade_inicial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_proj_verb_indefinida_xbolsas">
+      <soap12:operation soapAction="http://tempuri.org/func_proj_verb_indefinida_xbolsas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_proj_verb_indefinida_xtipo">
+      <soap12:operation soapAction="http://tempuri.org/func_proj_verb_indefinida_xtipo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_dependente_nao_filhoa">
+      <soap12:operation soapAction="http://tempuri.org/func_dependente_nao_filhoa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="func_depart_gerenciam_em_projeto">
+      <soap12:operation soapAction="http://tempuri.org/func_depart_gerenciam_em_projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="select_projeto">
+      <soap12:operation soapAction="http://tempuri.org/select_projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert_projeto">
+      <soap12:operation soapAction="http://tempuri.org/insert_projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_projeto">
+      <soap12:operation soapAction="http://tempuri.org/update_projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete_projeto">
+      <soap12:operation soapAction="http://tempuri.org/delete_projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search_projeto">
+      <soap12:operation soapAction="http://tempuri.org/search_projeto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="func3">
+    <wsdl:port name="func3Soap" binding="tns:func3Soap">
+      <soap:address location="http://localhost:3664/func3.asmx" />
+    </wsdl:port>
+    <wsdl:port name="func3Soap12" binding="tns:func3Soap12">
+      <soap12:address location="http://localhost:3664/func3.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

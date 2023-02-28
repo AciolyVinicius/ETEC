@@ -1,0 +1,35 @@
+Router>enable 
+Router#configure terminal
+
+###CONFIGURANDO AS PORTAS
+
+Router(config)#interface gigabitEthernet 2/0 <---MINHA PORTA!!!
+Router(config-if)#no shutdown 
+Router(config-if)#ip address 192.168.0.1 255.255.255.0
+Router(config-if)#exit
+
+Router(config)#interface gigabitEthernet 0/0
+Router(config-if)#no shutdown 
+Router(config-if)#ip address 10.0.0.2 255.255.255.0
+Router(config-if)#exit
+
+Router(config)#interface gigabitEthernet 1/0
+Router(config-if)#no shutdown
+Router(config-if)#ip address 10.0.1.1 255.255.255.0
+Router(config-if)#CTRL + Z
+
+###CONFIGURANDO A TABELA ROTEAMENTO
+
+Router#
+Router#configure terminal
+Router(config)#router rip
+Router(config-router)#network 192.168.0.0
+Router(config-router)#network 10.0.0.0
+Router(config-router)#network 10.0.1.0
+Router(config-router)#CTRL + Z
+
+###SALVANDO AS ALTERAÇÕES
+Router#
+Router#copy running-config startup-config
+Destination filename [startup-config]? ENTER
+Router#

@@ -1,0 +1,26 @@
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\bin\Debug\Aula06-AtividadeLogin.exe
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\bin\Debug\Aula06-AtividadeLogin.pdb
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06_AtividadeLogin.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.exe
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.pdb
+C:\Documents and Settings\Virtual\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06_AtividadeLogin.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\bin\Debug\Aula06-AtividadeLogin.exe
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\bin\Debug\Aula06-AtividadeLogin.pdb
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06_AtividadeLogin.Frm_Login.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06_AtividadeLogin.Properties.Resources.resources
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Virtual\Desktop\2014C#II\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.exe
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.pdb
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\bin\Debug\Aula06-AtividadeLogin.exe
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\bin\Debug\Aula06-AtividadeLogin.pdb
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06_AtividadeLogin.Frm_Login.resources
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06_AtividadeLogin.Properties.Resources.resources
+C:\Users\Aluno\Desktop\Aula06-AtividadeLogin\Aula06-AtividadeLogin\obj\x86\Debug\Aula06-AtividadeLogin.csproj.GenerateResource.Cache

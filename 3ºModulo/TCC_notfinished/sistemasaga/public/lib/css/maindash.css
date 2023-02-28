@@ -1,0 +1,80 @@
+@media only screen and (min-width: 992px) {
+	#endRua{ padding: 0; }
+	#endNum{ padding-right: 0.1px; }
+	#endCid{ padding: 0; }
+	#endEst{ padding-right: 0.1px; }
+
+	#btnModalDelete{ margin-top: -4.2%; }
+	#formDescricao{ padding: 0; }
+	#atualTurma{ color: red; }
+	#tituloHome{ padding-top: 8px; }
+	#imgPerfil{ max-width: 250px; max-height: 300px; margin-top: 10%; border-radius: 100%; }
+	#cal { padding-bottom: 57%; }
+}
+
+@media only screen and (max-width: 991px) {
+	#btnListagem{ width: 100%; }
+	#btnListagem2{ width: 100%; margin: 1%; }
+	#endRua{ padding: 0; }
+	#endNum{ padding: 0; }
+	#endCid{ padding: 0; }
+	#endEst{ padding: 0; }
+
+	#btnModalDelete{ margin-top: -5.5%; }
+	#formDescricao{ padding: 0; }
+	#tituloHome{ padding-top: 8px; }
+	#btnHome{ margin-top: -7%; }
+	#imgPerfil{ max-width: 230px; max-height: 280px; margin-top: 3%; border-radius: 100%;}
+}
+
+.fc-day-number { color: #00bfff; }
+.fc-day-number:hover { color: red; }
+
+.text{ text-align: justify; }
+
+#btnCadastrar{ width: 100%; margin-bottom: 1%; }
+#btnCancelar{ width: 100%; }
+
+#logo{ background-color: #222d32; }
+
+#navcor{ background-color: #222d32; }
+
+#user-header{ background-color: #222d32; }
+
+#itensPainel{
+	margin: 2%;
+	padding: 1.5%;
+	background-color: #222d32;
+}
+
+#itensPainel a:link{ font-size: 30px; }
+
+#itensPainel i{ color: white; }
+
+#itensPainel h4{ color: white; }
+
+#profile{ margin: 0; padding: 0; }
+
+.theadTables{
+	background-color: #222d32;
+	color: white;
+}
+
+.box-disciplinas {
+	height: 265px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.box-disciplinas::-webkit-scrollbar{
+	width: 15px;
+}
+
+.box-disciplinas::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background-color: rgba(0,0,0,.1);
+}
+
+table tbody tr .text-center {
+	vertical-align: middle;
+}

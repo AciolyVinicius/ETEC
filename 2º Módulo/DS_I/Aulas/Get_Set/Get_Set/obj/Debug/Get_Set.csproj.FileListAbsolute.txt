@@ -1,0 +1,10 @@
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\bin\Debug\Get_Set.exe.config
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\bin\Debug\Get_Set.exe
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\bin\Debug\Get_Set.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.csprojResolveAssemblyReference.cache
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.Form1.resources
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.Properties.Resources.resources
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.csproj.GenerateResource.Cache
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.exe
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.pdb
+c:\users\aluno\documents\visual studio 2015\Projects\Get_Set\Get_Set\obj\Debug\Get_Set.Form2.resources

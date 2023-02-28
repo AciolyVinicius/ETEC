@@ -1,0 +1,366 @@
+show databases;
+
+create database diario_aluno;
+
+use diario_aluno;
+
+-- endereco
+create table tb_uf(
+cd_uf int not null,
+nm_estado varchar(30),
+constraint pk_uf
+	primary key (cd_uf));
+
+create table tb_cidade(
+cd_cidade int not null,
+cd_uf int,
+nm_cidade varchar(100),
+constraint pk_cidade
+	primary key (cd_cidade),
+constraint fk_cidade_estado
+	foreign key (cd_uf)
+		references tb_uf (cd_uf));
+
+create table tb_bairro(
+cd_bairro int not null,
+cd_cidade int,
+nm_bairro varchar (100),
+constraint pk_bairro
+	primary key (cd_bairro),
+constraint fk_bairro_cidade
+	foreign key (cd_cidade)
+		references tb_cidade (cd_cidade));
+
+-- login
+create table tb_pessoa(
+cd_pessoa int not null,
+nm_login varchar (20) not null,
+nm_senha varchar (20) not null,
+constraint pk_pessoa
+	primary key (cd_pessoa));
+
+-- area da diretoria
+create table tb_diretoria(
+cd_diretoria int not null,
+cd_pessoa int,
+constraint pk_diretoria
+	primary key (cd_diretoria),
+constraint fk_diretoria_pessoa
+	foreign key (cd_pessoa)
+		references tb_pessoa (cd_pessoa));
+
+create table tb_acesso_diretoria(
+cd_diretoria int,
+nm_titulo varchar (20),
+ds_acesso text,
+constraint fk_acesso_diretoria_diretoria
+	foreign key (cd_diretoria)
+		references tb_diretoria (cd_diretoria));
+
+create table tb_diretor(
+cd_diretor int not null,
+cd_diretoria int,
+nm_diretor varchar (30),
+dt_nascimento date,
+nm_rg varchar (12),
+cd_cpf varchar(12),
+im_diretor mediumblob,
+constraint pk_diretor
+	primary key (cd_diretor),
+constraint fk_diretor_diretoria
+	foreign key (cd_diretoria)
+		references tb_diretoria (cd_diretoria));
+
+-- area da coordenacao
+create table tb_coordenacao(
+cd_coordenacao int not null,
+cd_pessoa int,
+constraint pk_coordenacao
+	primary key (cd_coordenacao),
+constraint fk_coordenacao_pessoa
+	foreign key (cd_pessoa)
+		references tb_pessoa (cd_pessoa));
+
+create table tb_acesso_coordenacao(
+cd_coordenacao int,
+nm_titulo varchar (20),
+ds_acesso text,
+constraint fk_acesso_coordenacao_coordenacao
+	foreign key (cd_coordenacao)
+		references tb_coordenacao (cd_coordenacao)); 
+ 
+create table tb_coordenador(
+cd_coordenador int not null,
+cd_coordenacao int,
+nm_coordenador varchar (30),
+dt_nascimento date,
+nm_rg varchar (12),
+cd_cpf varchar(12),
+im_coordenador mediumblob,
+constraint pk_coordenador
+	primary key (cd_coordenador),
+constraint fk_coordenador_coordenacao
+	foreign key (cd_coordenacao)
+		references tb_coordenacao (cd_coordenacao));
+
+-- area da secretaria
+create table tb_secretaria(
+cd_secretaria int not null,
+cd_pessoa int,
+constraint pk_secretaria
+	primary key (cd_secretaria),
+constraint fk_secretaria_pessoa
+	foreign key (cd_pessoa)
+		references tb_pessoa (cd_pessoa));
+
+create table tb_acesso_secretaria(
+cd_secretaria int,
+nm_titulo varchar(20),
+ds_acesso text,
+constraint fk_acesso_secretaria_secretaria
+	foreign key (cd_secretaria)
+		references tb_secretaria (cd_secretaria));
+
+create table tb_funcionario_secretaria(
+cd_funcionario_secretaria int not null,
+cd_secretaria int,
+nm_funcionario_secretaria varchar (30),
+dt_nascimento date,
+nm_rg varchar (12),
+cd_cpf varchar(12),
+constraint pk_funcionario_secretaria
+	primary key (cd_funcionario_secretaria),
+constraint fk_funcionario_secretaria_secretaria
+	foreign key (cd_secretaria)
+		references tb_secretaria (cd_secretaria));
+
+create table tb_documento_secretaria(
+cd_secretaria int,
+im_documento longblob,
+ds_documento text,
+constraint fk_documento_secretaria_secretaria
+	foreign key (cd_secretaria)
+		references tb_secretaria (cd_secretaria));
+
+-- area do aluno
+create table tb_aluno(
+cd_aluno int not null,
+cd_pessoa int,
+nm_aluno varchar (100),
+dt_nascimento date,
+nm_rg varchar (12),
+cd_cpf varchar(11),
+im_aluno mediumblob,
+constraint pk_aluno 
+	primary key (cd_aluno),
+constraint fk_aluno_pessoa
+	foreign key (cd_pessoa)
+		references tb_pessoa(cd_pessoa));
+
+create table tb_acesso_aluno(
+cd_aluno int,
+nm_titulo varchar (20),
+ds_acesso text,
+constraint fk_acesso_aluno_aluno
+	foreign key (cd_aluno)
+		references tb_aluno (cd_aluno));
+
+-- area representante
+create table tb_representante(
+cd_representante int not null,
+cd_aluno int,
+constraint pk_representante
+	primary key (cd_representante),
+constraint fk_representante_aluno
+	foreign key (cd_aluno)
+		references tb_aluno (cd_aluno));
+
+create table tb_acesso_representante(
+cd_representante int,
+nm_titulo varchar (20),
+ds_acesso text,
+constraint fk_acesso_representante_representante
+	foreign key (cd_representante)
+		references tb_representante (cd_representante));
+
+create table tb_endereco(
+cd_endereco  int not null,
+cd_bairro int,
+cd_aluno int,
+nm_rua_numero int,
+nm_rua text,
+constraint pk_endereco
+	primary key (cd_endereco),
+constraint fk_endereco_bairro
+	foreign key (cd_bairro)
+		references tb_bairro (cd_bairro),
+constraint fk_endereco_aluno
+	foreign key (cd_aluno)
+		references tb_aluno (cd_aluno));
+
+create table tb_contato(
+cd_aluno int,
+cd_celular char (11),
+cd_telefone_fixo char (10),
+nm_email varchar (100),
+constraint fk_contato_aluno
+	foreign key (cd_aluno)
+		references tb_aluno (cd_aluno));
+
+create table tb_avaliacao(
+cd_aluno int,
+ds_avaliacao text,
+cd_nota float,
+nm_disciplina varchar (100),
+constraint fk_avaliacao_aluno
+	foreign key (cd_aluno)
+		references tb_aluno (cd_aluno));
+
+create table tb_disciplina(
+cd_disciplina int not null,
+nm_disciplina varchar(100),
+ds_disciplina longtext,
+constraint pk_disciplina
+	primary key (cd_disciplina));
+
+create table item_aluno_disciplina(
+cd_aluno int,
+cd_disciplina int,
+constraint fk_disciplina_item_aluno
+	foreign key (cd_aluno)
+		references tb_aluno (cd_aluno),
+constraint fk_aluno_item_disciplina
+	foreign key (cd_disciplina)
+		references tb_disciplina (cd_disciplina));
+
+create table tb_forum(
+cd_forum int not null,
+cd_disciplina int,
+nm_forunm varchar (30),
+constraint pk_forum
+	primary key (cd_forum),
+constraint fk_forum_disciplina
+	foreign key (cd_disciplina)
+		references tb_disciplina (cd_disciplina));
+
+create table tb_mensagem(
+cd_forum int,
+ds_mensagem longtext,
+dt_mensagem date,
+hr_mensagem time,
+constraint fk_mensagem_forum
+	foreign key (cd_forum)
+		references tb_forum (cd_forum));
+
+create table tb_hora_dia(
+cd_hora_dia int not null,
+hr_entrada time,
+hr_saida time,
+constraint pk_hora_dia
+	primary key (cd_hora_dia));
+
+create table tb_dia_semana(
+cd_dia_semana int not null,
+cd_hora_dia int,
+dt_semana date,
+constraint pk_dia_semana
+	primary key (cd_dia_semana),
+constraint fk_dia_semana_hora_dia
+	foreign key (cd_hora_dia)
+		references tb_hora_dia (cd_hora_dia));
+
+create table tb_aula(
+cd_aula int not null,
+cd_disciplina int,
+constraint pk_aula
+	primary key (cd_aula),
+constraint fk_aula_disciplina
+	foreign key (cd_disciplina)
+		references tb_disciplina (cd_disciplina));
+
+create table item_aula_dia_semana(
+cd_aula int,
+cd_dia_semana int,
+constraint fk_dia_semana_item_aula
+	foreign key (cd_aula)
+		references tb_aula (cd_aula),
+constraint fk_aula_item_dia_semana
+	foreign key (cd_dia_semana)
+		references tb_dia_semana (cd_dia_semana));
+
+create table tb_aviso(
+cd_disciplina int,
+ds_aviso longtext,
+dt_aviso date,
+hr_aviso time,
+constraint fk_aviso_disciplina
+	foreign key (cd_disciplina)
+		references tb_disciplina (cd_disciplina));
+
+create table tb_periodo(
+cd_periodo int not null,
+dt_comeco_periodo date,
+dt_fim_periodo date,
+constraint pk_periodo
+	primary key (cd_periodo));
+
+create table item_periodo_disciplina(
+cd_periodo int,
+cd_disciplina int,
+constraint fk_periodo_item_disciplina
+	foreign key (cd_disciplina)
+		references tb_disciplina (cd_disciplina),
+constraint fk_disciplina_item_periodo
+	foreign key  (cd_periodo)
+		references tb_periodo (cd_periodo));
+
+create table tb_professor(
+cd_professor int not null,
+nm_professor varchar (45),
+im_professor mediumblob,
+constraint pk_professor
+	primary key (cd_professor));
+
+create table item_disciplina_professor(
+cd_disciplina int,
+cd_professor int,
+constraint fk_disciplina_item_professor
+	foreign key (cd_professor)
+		references tb_professor (cd_professor),
+constraint fk_professor_item_disciplina
+	foreign key (cd_disciplina)
+		references tb_disciplina (cd_disciplina));
+
+create table tb_material(
+cd_material int not null,
+cd_professor int,
+nm_material varchar (100),
+ds_material longtext,
+constraint pk_material
+	primary key (cd_material),
+constraint fk_material_professor
+	foreign key (cd_professor)
+		references tb_professor (cd_professor));
+
+create table tb_midia_material(
+cd_material int,
+im_material longblob,
+constraint fk_midia_material_material
+	foreign key (cd_material)
+		references tb_material (cd_material));
+
+create table tb_metodo_avaliacao(
+cd_metodo_avaliacao int not null,
+ds_metodo_avaliacao text,
+constraint pk_metodo_avaliacao
+	primary key (cd_metodo_avaliacao));
+
+create table item_metodo_avaliacao_professor(
+cd_metodo_avaliacao int,
+cd_professor int,
+constraint fk_professor_item_metodo_avaliacao
+	foreign key (cd_metodo_avaliacao)
+		references tb_metodo_avaliacao (cd_metodo_avaliacao),
+constraint fk_metodo_avaliacao_item_professor
+	foreign key (cd_professor)
+		references tb_professor (cd_professor));

@@ -1,0 +1,33 @@
+TOO - Quarta - feira (26/07/2017)
+
+**Classes:
+--> Possui
+-Nome, Atributos e métodos
+
+Exemplos "estranhos":
+
+================================
+CANETA------------NOME 
+
+COR                  |
+TAMANHO              | -------------Atributos
+FORMATO              |
+ESPECIFICIDADE       |
+
+ESCREVER ---------MÉTODO
+================================
+
+================================
+PAPAGAIO
+
+STRING NOME
+STRING COR
+DOUBLE PESO
+BOOLEAN GENERO
+INT IDADE
+STRING ESPECIE 
+
+VOID VOAR(  );
+STRING FALAR(  );
+VOID COMER(  );
+================================

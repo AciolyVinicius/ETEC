@@ -1,0 +1,12 @@
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\bin\Debug\Aula_17082017.exe.config
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\bin\Debug\Aula_17082017.exe
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\bin\Debug\Aula_17082017.pdb
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.csprojResolveAssemblyReference.cache
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.Properties.Resources.resources
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.csproj.GenerateResource.Cache
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.exe
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.pdb
+J:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.lbl_chk_rdb_grb.resources
+F:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\bin\Debug\Aula_17082017.exe.config
+F:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.exe
+F:\2º Módulo\DS_I\Aulas\Aula_17082017\Aula_17082017\obj\Debug\Aula_17082017.pdb

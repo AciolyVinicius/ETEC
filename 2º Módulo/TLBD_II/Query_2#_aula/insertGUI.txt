@@ -1,0 +1,138 @@
+show databases;
+
+
+
+use estoque;
+
+
+
+insert into tb_categoria (cd_categoria, nm_categoria) values(
+
+1, 'Placa de Vídeo'),
+
+(2, 'Processador'),
+
+(3, 'Placa de Rede'),
+
+(4, 'Gabinete'),
+
+(5, 'Cooler'),
+
+(6, 'Teclado'),
+
+(7, 'Monitor'),
+
+(8, 'Fonte'),
+
+(9, 'HD'),
+
+(10, 'Memória RAM'
+);
+
+
+
+insert into tb_produto (cd_produto, nm_produto, qt_estoque, cd_categoria) values(
+
+1, 'GTX1060', 10, 1),
+
+(2, 'Teclado Mecânico', 100, 6),
+
+(3, 'Blue-Case Gamer', 50, 4),
+
+(4, 'Fonte 650W 80 Plus Bronze CX650 CP 9020122', 40, 8,)
+
+(5, 'HD WD SATA 3,5 Blue PC 1TB', 120, 9),
+
+(6, 'Fan USB Cooler Desk Mini ', 5, 5),
+
+(7, 'Monitor LED Full HD 23 Polegadas', 30, 7),
+
+(8, 'Intel Core i7 - Sétima Geração', 10, 2),
+
+(9, 'PLACA DE REDE PCI-EX 1X GIGABIT PARA SERVIDOR INTEL EXPI9301CT', 20, 3),
+
+(10,  'HyperX FURY 8GB 2400Mhz DDR4 CL15 Black - HX424C15FB2/8', 10, 10
+
+);
+
+
+
+
+insert into tb_cliente (cd_cliente, nm_cliente, cd_cpf) values(
+1, 'João de Castro', 11827349556),
+(2, 'Guilherme Pedro', 26513365556),
+(3, 'Vinicius Gasthein', 51412244556),
+(4, 'Matheus de Guincho', 65922255336),
+(5, 'Minfausto Silva', 66356283445),
+(6, 'Macarena Morena', 55601213441),
+(7, 'Leornardo Dantas', 98583434557),
+(8, 'Gabriel de Bastilho', 23659514565),
+(9, 'Rafael Mysql', 14136985363),
+(10, 'Guilherme Pinto', 11958465588
+);
+
+insert into tb_notas_saida (cd_saida, cd_cliente, dt_saida) values(
+1, 1, '2012-05-22'),
+(2, 9, '2013-06-30'),
+(3, 2, '2012-09-05'),
+(4, 5, '2016-12-15'),
+(5, 7, '2011-12-12'),
+(6, 6, '2015-03-16'),
+(7, 8, '2003-04-14'),
+(8, 4, '2008-07-02'),
+(9, 3, '2006-06-01'),
+(10, 10, '2017-11-12'
+);
+
+insert into item_saida (cd_saida, cd_produto, qt_saida_produto, vl_produto) values(
+1, 2, 10, 3000.00),
+(2, 3, 1, 300.00),
+(3, 5, 3, 600.00),
+(4, 7, 1, 900.00),
+(5, 8, 4, 6000.00),
+(6, 9, 20, 1000.00),
+(7, 1, 5, 1000.00),
+(8, 10, 7, 1800.00),
+(9, 4, 8, 1300.00),
+(10, 6, 2, 300.00
+);
+
+insert into tb_fornecedor (cd_fornecedor, nm_fornecedor, cd_cnpj) values(
+1, 'G-Forci',  01010101010101),
+(2, 'Intel', 21212121212121),
+(3, 'Gigabit',  03030302020202),
+(4, 'Blue Sky',    56565656898754),
+(5, 'Cabosata',  23230202458798),
+(6, 'Multilaser',    54659865322154),
+(7, 'LG',    21023265956202),
+(8, 'Reborn',  54845465952135),
+(9, 'Blue',   21215487986532),
+10, 'Corsair',65656565656565
+);
+
+insert into tb_nota_entrada (cd_entrada, cd_fornecedor, dt_entrada_produto) values(
+1, 1, '2005-01-02'),
+(2, 3, '2007-01-01'),
+(3, 10, '2011-08-20'),
+(4, 4, '2012-05-17'),
+(5, 7, '2013-04-25'),
+(6, 2, '2012-01-30'),
+(7, 9, '2012-12-29'),
+(8, 5, '2012-12-25'),
+(9, 8, '2011-04-22'),
+(10, 6, '2012-07-15'
+);
+
+insert into item_entrada (cd_entrada, cd_produto, qt_entrada_produto, vl_produto) values(
+1, 9, 159, 8000.75),
+(2, 10, 175, 20000.00),
+(3, 6, 550, 11600.50),
+(4, 8, 750, 65000.50),
+(5, 3, 280, 1300.00),
+(6, 5, 217, 1050.00),
+(7, 7, 507, 79999.99),
+(8, 1, 259, 70000.00),
+(9, 2, 658, 90000.50),
+(10, 4, 170, 1500.00
+);
+

@@ -1,0 +1,5 @@
+View é um caminho alternativo para visualizarmos dados derivados de uma ou mais tabelas em um banco de dados.
+Views também podem ser utilizadas para informação calculada ou derivada, como preço total de um item de pedido que é calculado pela multiplicação de quantidade de preço unitário.
+As tabelas criadas em um banco de dados relacional têm existência física dentro do sistema de computação.
+Muitas vezes é necessário criar tabelas que não ocupem espaço físico, mas que possam se utilizadas como as tabelas normais.
+Estas são as chamadas de views (Tabelas Virtuais).

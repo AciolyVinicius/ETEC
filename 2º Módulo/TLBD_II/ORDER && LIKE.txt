@@ -1,0 +1,19 @@
+	ORDER BY -- ordena
+	  |
+	  |----> ASC -- ascendente
+	  |
+	  |----> DESC -- descendente
+
+
+	LIKE -- compara caracter
+	 |
+	 |----> % -- substitui todos os caracteres
+	 |
+	 |----> _ -- substitui 1 caracter
+
+	
+	GROUP BY -- junta as similaridades
+	 |
+	 |---> HAVING -- "tendo" -> compara*
+	 |
+	 |

@@ -1,0 +1,181 @@
+show tables;
+
+select * from tb_aluno;
+select nm_aluno, dt_nascimento 
+	from tb_aluno
+		where dt_nascimento > '1980-01-01'
+		and dt_nascimento < '1983-01-01'
+		and cd_cidade = 1;
+
+select nm_uf, sg_uf
+	from tb_estado
+		where sg_uf = 'SP';
+
+select count(*)
+	from tb_matricula
+		where dt_matricula >= '2012-02-01'
+		and dt_matricula <= '2012-02-10';
+
+
+select *
+	from tb_matricula
+		where dt_matricula >= '2012-02-01'
+		and dt_matricula <= '2012-02-10';
+
+-- asc ascendente & desc descendente
+select * from tb_aluno
+	order by nm_aluno ; -- --ou-- select * from tb_aluno order by nm_aluno asc; 
+
+select * from tb_aluno
+	order by nm_aluno desc;
+
+select * from tb_aluno
+	order by 3; -- o número sugere o número da coluna a ser ordenado
+
+select * from tb_aluno order by cd_cidade, nm_aluno desc;
+
+select nm_aluno, dt_nascimento
+	from tb_aluno
+		where year (dt_nascimento) > 1980
+		and year (dt_nascimento) < 1989
+			order by nm_aluno;
+
+select nm_aluno
+	from tb_aluno
+		where nm_aluno  like '%a__a%';
+
+select nm_aluno, dt_nascimento
+	from tb_aluno
+		where nm_aluno like 'a%'
+			and year (dt_nascimento) = 1992
+				order by nm_aluno;
+
+select nm_aluno, 
+	length(nm_aluno) as Caracteres,
+	position('S'in nm_aluno) as 'Posição do Caracter',
+	instr(nm_aluno, 'Si') as 'Posição do Caracter',
+	substring(nm_aluno from 4 for 3) as 'String',
+	substr(nm_aluno, 7, 4) as 'String',
+	concat(nm_aluno,' - ', year(dt_nascimento) ) as 'Nome e Ano',
+	bit_length(nm_aluno) as 'bits',
+	replace(nm_aluno, 'SILVA', '!ALTISTA@') 'Troca Letras' -- no MySQL o *as é default
+			from tb_aluno
+				where nm_aluno not like 'l%' and nm_aluno not like '%z'
+					order by nm_aluno; 
+
+select count(*) as 'Quantidade de Alunos'
+	from tb_aluno;
+
+select count(*) as 'Quantidade de Alunos'
+	from tb_aluno;
+
+select year(dt_nascimento) as 'Ano de Nascimento',
+	count(*) as 'Quantidade de Alunos'
+		from tb_aluno
+			group by year (dt_nascimento);
+
+select year(dt_nascimento) as 'Ano de Nascimento',
+	count(*) as 'Quantidade de Alunos'
+		from tb_aluno
+			group by year (dt_nascimento)
+				having count(*) > 3;
+
+select nm_aluno from tb_aluno where nm_aluno = "FLÁVIA DA SILVA";
+select nm_aluno from tb_aluno where nm_aluno like "%FL%" ;
+
+show tables;
+
+select * 
+	from tb_aluno inner join tb_cidade
+		on tb_aluno.cd_cidade = tb_cidade.cd_cidade;
+
+select * 
+	from tb_aluno, tb_cidade
+		where tb_aluno.cd_cidade = tb_cidade.cd_cidade
+			order by tb_cidade.cd_cidade desc;
+
+select tb_aluno.nm_aluno, tb_cidade.nm_cidade, tb_estado.sg_uf 
+	from 
+	tb_aluno join tb_cidade on tb_aluno.cd_cidade = tb_cidade.cd_cidade
+    join tb_estado on tb_cidade.cd_uf = tb_estado.cd_uf;
+
+select tb_aluno.nm_aluno, tb_cidade.nm_cidade, tb_estado.sg_uf 
+	from tb_aluno, tb_cidade, tb_estado
+		where tb_aluno.cd_cidade = tb_cidade.cd_cidade
+			and tb_cidade.cd_uf = tb_estado.cd_uf
+				order by tb_estado.sg_uf desc;
+
+select a.nm_aluno, c.nm_cidade, e.sg_uf 
+	from tb_aluno a join tb_cidade as c
+		on a.cd_cidade = c.cd_cidade
+			join tb_estado as e
+				on c.cd_uf = e.cd_uf;
+-- MESMA COISA que
+select tb_aluno.nm_aluno, tb_cidade.nm_cidade, tb_estado.sg_uf 
+	from tb_aluno join tb_cidade 
+		on tb_aluno.cd_cidade = tb_cidade.cd_cidade
+			join tb_estado 
+				on tb_cidade.cd_uf = tb_estado.cd_uf;
+
+select a.nm_aluno as "Nome do Aluno", concat(c.nm_cidade,' - ', e.sg_uf)  as "Cidade e Estado"
+	from tb_aluno a join tb_cidade as c
+		on a.cd_cidade = c.cd_cidade
+			join tb_estado as e
+				on c.cd_uf = e.cd_uf;
+
+select tb_aluno.nm_aluno, tb_cidade.nm_cidade, tb_estado.sg_uf 
+	from tb_aluno, tb_cidade, tb_estado
+		where tb_aluno.cd_cidade = tb_cidade.cd_cidade
+			and tb_cidade.cd_uf = tb_estado.cd_uf
+				order by tb_aluno.nm_aluno asc;
+desc tb_aluno;
+select cd_aluno Código, nm_aluno Nome
+	from tb_aluno
+		union
+select cd_cidade, nm_cidade
+	from tb_cidade;
+
+desc tb_curso;
+select * from tb_curso;
+insert into tb_curso values(
+5, "LICENCIATURA MATEMÁTICA");
+
+select cd_curso from tb_curso;
+
+select c.nm_curso as "Nome do Curso", t.qt_serie "Série", t.aa_ano "Ano"
+	from tb_curso c join tb_turma as t
+		on c.cd_curso = t.cd_curso;
+
+select c.nm_curso, t.qt_serie, t.aa_ano
+	from tb_curso as c left join tb_turma as t
+		on c.cd_curso = t.cd_curso;
+
+select c.nm_curso, t.qt_serie, t.aa_ano
+	from tb_curso as c right join tb_turma as t
+		on c.cd_curso = t.cd_curso;
+
+select * from tb_turma;
+
+select c.nm_curso, t.qt_serie, t.aa_ano
+	from tb_curso as c left join tb_turma as t
+		on c.cd_curso = t.cd_curso
+			where t.qt_serie is null;
+
+insert into tb_aluno values
+(41, 14, 'PEPINO DE CÁPRIO', '1924-04-24');
+
+select * from tb_aluno order by cd_aluno;
+
+update tb_aluno
+	set cd_cidade = 12 + 1, dt_nascimento = '1994-04-24'
+		where cd_aluno = 41;
+
+select * 
+	from tb_aluno 
+		where cd_aluno = 41;
+
+delete from tb_aluno
+	where cd_aluno = 41; -- o mysql tem autocommit
+
+select * from tb_cidade;
+ 

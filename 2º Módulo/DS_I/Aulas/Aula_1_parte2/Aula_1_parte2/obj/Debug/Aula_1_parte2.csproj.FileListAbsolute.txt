@@ -1,0 +1,9 @@
+C:\Users\Aluno\Desktop\DS\Aulas\Aula_1_parte2\Aula_1_parte2\bin\Debug\Aula_1_parte2.exe.config
+C:\Users\Aluno\Desktop\DS\Aulas\Aula_1_parte2\Aula_1_parte2\obj\Debug\Aula_1_parte2.csprojResolveAssemblyReference.cache
+C:\Users\Aluno\Desktop\DS\Aulas\Aula_1_parte2\Aula_1_parte2\bin\Debug\Aula_1_parte2.exe
+C:\Users\Aluno\Desktop\DS\Aulas\Aula_1_parte2\Aula_1_parte2\bin\Debug\Aula_1_parte2.pdb
+C:\Users\Aluno\Desktop\DS\Aulas\Aula_1_parte2\Aula_1_parte2\obj\Debug\Aula_1_parte2.exe
+C:\Users\Aluno\Desktop\DS\Aulas\Aula_1_parte2\Aula_1_parte2\obj\Debug\Aula_1_parte2.pdb
+J:\2º Módulo\DS_I\Aulas\Aula_1_parte2\Aula_1_parte2\bin\Debug\Aula_1_parte2.exe.config
+J:\2º Módulo\DS_I\Aulas\Aula_1_parte2\Aula_1_parte2\obj\Debug\Aula_1_parte2.exe
+J:\2º Módulo\DS_I\Aulas\Aula_1_parte2\Aula_1_parte2\obj\Debug\Aula_1_parte2.pdb

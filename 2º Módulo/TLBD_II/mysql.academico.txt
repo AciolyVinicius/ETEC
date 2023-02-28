@@ -1,0 +1,245 @@
+show databases; 
+/* Banco de dados academico
+desenvolvido para exemplo em sala de aula*/
+-- Não pode ser usado para TCC!
+##
+create database academico;
+
+use academico;
+
+create table tb_curso (
+    cd_curso int not null,
+    nm_curso varchar(100)
+);
+
+show tables;
+desc tb_curso;
+
+alter table tb_curso
+	add constraint pk_curso primary key(cd_curso);
+
+create table tb_turno (
+    cd_turno int not null,
+    nm_turno varchar(20) not null,
+    constraint pk_turno primary key (cd_turno)
+);
+
+create table tb_disciplina (
+    cd_disciplina int not null,
+    nm_disciplina varchar(150) not null,
+    constraint pk_disciplina primary key (cd_disciplina)
+);
+
+show tables;
+desc tb_disciplina;
+
+create table tb_estado (
+    cd_uf int not null,
+    nm_uf varchar(30) not null,
+    sg_uf char(2),
+    constraint pk_uf primary key (cd_uf)
+);
+
+create table tb_cidade (
+    cd_cidade int not null,
+    nm_cidade varchar(100),
+    cd_uf int,
+    constraint pk_cidade primary key (cd_cidade),
+    constraint fk_cidade_estado foreign key (cd_uf)
+        references tb_estado (cd_uf)
+);
+
+create table tb_turma (
+    cd_turma int not null,
+    cd_turno int,
+    cd_curso int,
+    qt_serie smallint not null,
+    aa_turma year not null,
+    constraint pk_turma primary key (cd_turma),
+    constraint fk_turma_turno foreign key (cd_turno)
+        references tb_turno (cd_turno),
+    constraint fk_turma_curso foreign key (cd_curso)
+        references tb_curso (cd_curso)
+);
+show tables;
+
+desc tb_estado;
+
+insert into tb_estado(sg_uf, cd_uf, nm_uf)
+values('MG', 06, 'Minas Gerais');
+show tables;
+
+insert into tb_estado values (07, 'Rio de Janeiro', 'RJ');
+
+desc tb_curso;
+
+insert into tb_curso values
+(1, 'Engenharia da Computação'),
+(2, 'Sistema de Informação'),
+(3, 'Direito'),
+(4, 'Medicina');
+
+select 
+    *
+from
+    tb_curso;
+
+desc tb_curso;
+
+insert into tb_turno values
+(1, 'Diurno'),
+(2, 'Noturno'),
+(3, 'Integral');
+
+select 
+    cd_curso
+from
+    tb_curso;
+
+select 
+    1
+from
+    tb_curso;
+
+desc tb_curso;
+
+select 
+    *
+from
+    tb_curso;
+
+insert into tb_disciplina values
+(1, 'Banco de Dados'),
+(2, 'Hardware'),
+(3, 'Desenvolvimento web'),
+(4, 'Anatomia I'),
+(5, 'Patologias II'),
+(6, 'Segurança'),
+(7, 'Genética'),
+(8, 'Direito Constitucional'),
+(9, 'Direito Tributário');
+
+insert into tb_estado values
+(1, 'São Paulo', 'SP'),
+(2, 'Mato Grosso', 'MT'),
+(3, 'Mato Grosso do Sul', 'MS'),
+(4, 'Paraná', 'PR');
+
+insert into tb_cidade values
+(1, 'Votupuranga',1),
+(2,'Santa Fé do Sul',1),
+(3,'São Paulo',1),
+(4,'Diadema',1),
+(5,'São Bernardo do Campo',1),
+(6,'Ribeirão Preto',1),
+(7,'Várzea Grande',2),
+(8,'Colíder',2),
+(9,'Cuiabá',2),
+(10,'Aparecida do Toboado',2), -- é 3
+(11,'Paranaíba',3),
+(12,'Cassilândia',3),
+(13,'Maringá',4),
+(14,'Curitiba',4);
+
+insert into tb_turma values
+(1,3,1,1,2012),
+(2,2,2,3,2012),
+(3,3,1,3,2012),
+(4,3,4,1,2012);
+
+show tables;
+
+create table tb_aluno (
+    cd_aluno int not null,
+    cd_cidade int,
+    nm_aluno varchar(45) not null,
+    dt_nascimento date,
+    constraint fk_aluno_cidade foreign key (cd_cidade)
+        references tb_cidade (cd_cidade)
+);
+
+alter table tb_aluno
+add constraint pk_aluno primary key (cd_aluno);
+
+insert into tb_aluno (cd_aluno, cd_cidade, nm_aluno, dt_nascimento) values
+(1,1, 'Fernandinho Silva', '1980.08.10'),
+(2,1, 'Flávia da Silva', '1980.03.21'),
+(3,2, 'Mauro de Oliveira', '1979.08.01'),
+(4,2, 'Vilma da Costa Fernandes', '1987.09.04'),
+(5,2, 'Edmilson Antunes Prado', '1987.10.07'),
+(6,3, 'Abel Virme Sintra', '1987.01.03'),
+(7,3, 'Bianca Xavier da Costa', '1986.04.09'),
+(8,3, 'Civuca Marques Bertioga', '1985.12.06'),
+(9,3, 'Davi Siqueira de Sousa', '1984.04.03'),
+(10,3, 'Elisabete de Sousa', '1987.12.20'),
+(11,3, 'Eleandro Manuel Vieira', '1979.07.14'),
+(12,4, 'Giuliano Silva', '1983.01.10'),
+(13,4, 'Germinía Antônia da Costa', '1981.06.21'),
+(14,4, 'Haroldo Silva Mineiro', '1983.11.11'),
+(15,4, 'Ítalo Selva de Pedro', '1984.07.27'),
+(16,5, 'Janete Bela de Sousa', '1981.09.29'),
+(17,5, 'Jonas Colméia da Silva', '1979.10.12'),
+(18,5, 'Kalil Assaf Moreno', '1980.12.12'),
+(19,6, 'Liandra Fifa Gouveia', '1990.10.09'),
+(20,7, 'Leontino Marques Sanches', '1978.07.07'),
+(21,7, 'Tinoco Cortez', '1976.09.09'),
+(22,8, 'Thaile Amparo de Cabral', '1991.08.29'),
+(23,8, 'Jurandir Pena Branca', '1991.11.29'),
+(24,9, 'Camila Hermes Picles', '1990.03.11'),
+(25,9, 'Getúlio Fatia Campriano', '1990.05.05'),
+(26,9, 'Armelindo Selva de Pedra', '1990.05.09'),
+(27,9, 'Wilson Gouveia Antunes', '1989.05.20'),
+(28,9, 'Getúlio Fatia Campriano', '1991.06.15'),
+(29,10, 'Apraziano Mongolo Bolo', '1992.07.12'),
+(30,11, 'Érica Sintra', '1988.09.12'),
+(31,12, 'Marildo Bule Sousa', '1990.12.25'),
+(32,12, 'Sílvio Belo Bounce', '1993.04.25'),
+(33,12, 'Ambrósio Salviano Sereno', '1992.11.28'),
+(34,13, 'Juventino Paraiba Negação', '1993.12.21'),
+(35,13, 'Paula Ferradura Selches', '1990.08.08'),
+(36,13, 'Priscila Candura Clemente', '1993.11.12'),
+(37,14, 'Glaúcia Teixeira Gouveia', '1991.11.13'),
+(38,14, 'Broca Xavez', '1992.02.01'),
+(39,14, 'Anita Ana Areta', '1989.11.04'),
+(40,14, 'Neifrásio Giba Junqueira', '1992.03.04');
+
+insert into tb_matricula (cd_matricula, cd_turma, cd_turma, cd_aluno, cd_disciplina, dt_matricula) values
+(110, 1, 1, 2, '2012.02.10'),
+(111, 1, 2, 2, '2012.02.10'),
+(112, 1, 3, 2, '2012.02.10'),
+(113, 1, 4, 2, '2012.02.10'),
+(114, 1, 5, 2, '2012.02.10'),
+(115, 1, 6, 2, '2012.02.10'),
+(116, 1, 7, 2, '2012.02.10'),
+(117, 1, 8, 2, '2012.02.10'),
+(118, 1, 9, 2, '2012.02.10'),
+(119, 1, 10, 2, '2012.02.11'),
+(120, 2, 11, 3, '2012.02.10'),
+(121, 2, 12, 3, '2012.02.10'),
+(122, 2, 13, 3, '2012.02.10'),
+(123, 2, 14, 3, '2012.02.12'),
+(124, 2, 15, 3, '2012.02.12'),
+(125, 2, 16, 3, '2012.02.20'),
+(126, 2, 17, 3, '2012.02.20'),
+(127, 2, 18, 3, '2012.02.20'),
+(128, 2, 19, 3, '2012.02.10'),
+(129, 2, 20, 3, '2012.02.11'),
+(130, 2, 21, 6, '2012.02.10'),
+(131, 2, 22, 6, '2012.02.10'),
+(132, 2, 23, 6, '2012.02.10'),
+(133, 2, 24, 6, '2012.02.12'),
+(134, 2, 25, 6, '2012.02.12'),
+(135, 2, 26, 6, '2012.02.20'),
+(136, 2, 27, 6, '2012.02.20'),
+(137, 2, 28, 6, '2012.02.20'),
+(138, 2, 29, 6, '2012.02.12'),
+(139, 2, 30, 6, '2012.02.12'),
+(140, 2, 31, 6, '2012.02.12'),
+(141, 2, 32, 6, '2012.02.12'),
+(142, 2, 33, 6, '2012.02.12'),
+(132, 2, 23, 6, '2012.02.12'),
+(132, 2, 23, 6, '2012.02.12'),
+(132, 2, 23, 6, '2012.02.12'),
+(132, 2, 23, 6, '2012.02.12'),
+(132, 2, 23, 6, '2012.02.12'));
+

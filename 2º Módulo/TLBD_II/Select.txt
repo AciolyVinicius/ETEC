@@ -1,0 +1,22 @@
+select
+(seleciona o atributos)
+	select atributo from nome_da_tabela;
+	select * from nome_da_tabela;
+	select atributo, atributo2 from nome_da_tabela;
+
+=
+>
+<
+>=
+<=
+<> -- DIFERENTE*
+
+
+CLAÚSULAS
+
+where -- comparar
+	select atributo 
+		from nome_da_tabela 
+			where atributo = valor_comparacao;
+
+

@@ -1,0 +1,32 @@
+Trigger (Gatilhos ou Disparadores ou Regras Ativas)
+
+O recurso denominado gatilho ou disparador é normalmente referenciado em seu termo
+equivalente em inglês trigger. Um trigger na verdade é uma sub-rotina, semelhante
+a um stored procedure, tendo como caracteristica operacional ser executada 
+automaticamente quando uma determinada ação for realizada no banco de dados.
+
+Sintaxe
+
+create trigger <nome da regra>
+	after|before
+	delete|insert|update[of <nome do atributo>]
+	on <nome da Tabela>
+	[for each row|statement]
+
+	when<condicao>
+
+	begin
+	...
+	end
+
+- > after statement: apos conclusão de operação de evento sobre um ou mais registros,
+ou seja, um conjunto de tuplas, de acordo com o comando
+- > after row: após a conclusão da operação de evento sobre somente um registro da 
+tabela. Nesse caso, haverá um disparo de regra para cada registro afetado pelo
+comando
+- > before statement: antes da conclsão da operação de evento, a regra será disparada
+e a operação do evento poderá afetar um ou mais registros, ou seja, um conjunto
+tuplas, de acordo com o comando.
+- > before row: antes da conclusão da operação de evento sobre um único registro da
+tabela. Nesse caso, haverá um disparo da regra para cada registro afetado pelo 
+comando.
